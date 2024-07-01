@@ -13,7 +13,10 @@ style: |
     font-size: 64px;
   }
   blockquote {
-    color:#ffffff
+    color: #ffffff
+  }
+  a {
+    color: #ffffff;
   }
   img {
     display: block;
