@@ -1,5 +1,5 @@
 ---
-marp: true
+marp: false
 backgroundColor: #1d3744;
 color: #ffffff;
 style: |
@@ -63,7 +63,7 @@ Motion Designer, CG Generalist
 > 2020 年 退社、独立してフリーランスに
 > 2021 年 法人化
 
-![w:360 h:360 bg right:40%](assets\qr_x.png)
+![w:360 h:360 bg right:40%](assets/qr_x.png)
 
 ## 合同会社キュムロワークスについて
 
@@ -73,7 +73,7 @@ Cumuloworks, Inc.
 > 広告・エンタメ映像など幅広く制作。
 > 7 月からは[@shigu](https://twitter.com/shgumo)との 2 名体制。
 
-![bg right:40%](assets\DSC01500.JPG)
+![bg right:40%](assets/DSC01500.JPG)
 
 ## [SHOWREEL 2024](https://cumulo.works/)
 
@@ -147,7 +147,7 @@ Mac 環境必須のアプリケーションなどを実行
   CHA_FAN: 3x Thermaltake TOUGHFAN 12 Pro
   ```
 
-![bg right:40%](assets\DSC01682.JPG)
+![bg right:40%](assets/DSC01682.JPG)
 
 ## レンダリングマシン
 
@@ -166,7 +166,7 @@ Mac 環境必須のアプリケーションなどを実行
   CHA_FAN: 2x Noctua NF-A12X15
   ```
 
-![bg right:40%](assets\DSC01743.JPG)
+![bg right:40%](assets/DSC01743.JPG)
 
 ## リモートデスクトップ環境
 
