@@ -1,20 +1,24 @@
 ---
 marp: true
+backgroundColor: #1d3744;
+color: #ffffff;
 style: |
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 
   section {
-    background-color: #1d3744;
-    color: #ffffff;
     font-family: 'Noto Sans JP', sans-serif;
   }
   h1 {
     text-align: center;
-    color: #ffffff;
     font-size: 64px;
   }
   blockquote {
     color:#ffffff
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+    background-color: transparent;
   }
 headingDivider: 3
 ---
