@@ -7,13 +7,20 @@ style: |
 
   section {
     font-family: 'Noto Sans JP', sans-serif;
+    border-radius: 18px;
+  }
+  code {
+    background-color: #000000;
+    color: #1d3744;
   }
   h1 {
     text-align: center;
     font-size: 64px;
   }
   blockquote {
-    color: #ffffff
+    color: #ffffff;
+    margin-top: 30px;
+    font-size: 24px;
   }
   a {
     color: #ffffff;
@@ -22,6 +29,17 @@ style: |
     display: block;
     margin: 0 auto;
     background-color: transparent;
+  }
+  li {
+    font-size: 24px;
+  }
+  video {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: transparent;
+    border-radius: 18px;
+    width: 80%;
   }
 headingDivider: 3
 ---
