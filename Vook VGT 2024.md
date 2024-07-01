@@ -26,63 +26,71 @@ style: |
 headingDivider: 3
 ---
 
+# 快適な制作環境の作り方
+
+![w:480](assets/typography_white.png)
+
 # 自己紹介
 
 ## Tomoya Eguchi
 
-Freelance Director, Motion Designer, CG Generalist
+合同会社キュムロワークス 代表
+Freelance Director
+Motion Designer, CG Generalist
+最近ちょっと Developer
 
 > 2014 年 映像制作を始める
+> 2017 年 大学に通いながらフリーランスに
 > 2018 年 株式会社ナナメ 入社
-> 2020 年 フリーランス
-> 2021 年 合同会社キュムロワークスとして法人化
+> 2020 年 退社、独立してフリーランスに
+> 2021 年 法人化
+
+![w:360 h:360 bg right:40%](assets\qr_x.png)
 
 ## 合同会社キュムロワークスについて
 
-> 2021 年 9 月設立
-> 広告・エンタメ映像など
-> 今年 7 月からは大澤(@shigu)との 2 名体制
+Cumuloworks, Inc.
+2021 年 9 月設立
 
-![bg right](https://cumulo.works/_next/image?url=%2Fcompany_pic_11.jpg&w=1920&q=75)
+> 広告・エンタメ映像など幅広く制作。
+> 7 月からは[@shigu](https://twitter.com/shgumo)との 2 名体制。
 
-## SHOWREEL 2024
+![bg right:40%](assets\DSC01500.JPG)
+
+## [SHOWREEL 2024](https://cumulo.works/)
+
+<video src="https://file.cumulo.works:48162/content/media/2024/07/Cumuloworks_SHOWREEL2023_v1.mp4" controls></video>
 
 # 機材紹介
 
-## メインルーター
-
-> YAMAHA RTX1300
+## メインルーター ([YAMAHA RTX1300](https://network.yamaha.com/products/routers/rtx1300))
 
 - NTT 光クロス(10Gbps)を引き込んでおり、スイッチを介して分配される。
 - 高スループットの回線を契約することにより、データのやり取りでストレスが減った。
 
-## メインスイッチ
-
-> XS508M
+## メインスイッチ ([NETGEAR XS508M](https://www.netgear.com/jp/business/wired/switches/unmanaged/xs508m))
 
 - 8 ポートのシンプルな 10GbE スイッチ。
 - 排熱も良好で、本格的に 10GbE 環境を構築したい方にはおすすめ
 - ここから各作業用マシン・サーバーなどへネットワークが分配される。
 
-## メインサーバー
+## メインサーバー ([Synology RS3621xs+](https://www.synology.com/ja-jp/products/RS3621xs+))
 
-> Synology RS3621xs+
-
-- すべての作業用ファイル・アセットなどを集約している。
+- すべての作業用ファイル・アセットなどを集約。
 - 社内ツールの Web サーバーとしての利用
 - Docker コンテナを走らせたり
 
-## オフサイトバックアップサーバー
+## オフサイトバックアップサーバー ([Synology DS1618+](https://www.synology.com/ja-jp/products/DS1621+))
 
 - メインサーバー導入前に使用していた 6 ベイ NAS を流用。
 - アクティブなプロジェクトやその他クリティカルなアセットをメインサーバーとリアルタイム同期
 - メインサーバーが使えない状況でも最低限のデータにアクセスできるようにしている
 
-## Mac Mini サーバー
+## Mac Mini サーバー ([M2 Mac Mini](https://www.apple.com/jp/mac-mini/))
 
-10GbE オプションの M2 Mac Mini を 2 台ラックマウントで導入している。
+- 10GbE オプションの M2 Mac Mini を 2 台ラックマウントで導入。
 
-### 1 台目
+### Mac Mini 1 台目
 
 安定動作が期待されるサーバー機能を集約
 
@@ -90,7 +98,7 @@ Freelance Director, Motion Designer, CG Generalist
 - VPN サーバー（運用休止中）
 - DaVinci Resolve のデータベースサーバー
 
-### 2 台目
+### Mac Mini 2 台目
 
 Mac 環境必須のアプリケーションなどを実行
 
@@ -98,7 +106,7 @@ Mac 環境必須のアプリケーションなどを実行
 - Thunderbolt 接続された LTO ドライブへのアクセス
 - DaVinci Resolve でのリモートレンダリング
 
-## UPS
+## UPS ([OMRON BN75R](https://socialsolution.omron.com/jp/ja/products_service/ups/product/bn75-300r/bn75-300r.html))
 
 - ラック全体の電源をバックアップする UPS。
 - 高負荷時で、15 分程度。
@@ -107,16 +115,40 @@ Mac 環境必須のアプリケーションなどを実行
 ## メインマシン
 
 - 2024 年始めに導入したメインマシン。After Effects や DaVinci Resolve での作業がストレスなく行えるように、メモリを 384GB に。
-- Cinema 4D などでのシミュレーション作業も高速で行えるように Threadripper にした。現状 VRAM が 24GB で足りないので、将来的に換装予定。
+- Cinema 4D などでのシミュレーション作業も高速で行えるように Ryzen Threadripper にした。現状 VRAM が 24GB で足りないので、将来的に換装予定。
 
-スペック表
+  ```
+  CPU: AMD Ryzen Threadripper 7980X
+  M/B: ASUS Pro WS TRX50-SAGE WIFI
+  GPU: MSI GeForce RTX 4090 SUPRIM LIQUID X
+  RAM: Kingston 384GB (4x DDR5-5600 RDIMM ECC 96GB Micron Die)
+  SSD: 2x Nextorage 2TB NVMe SSD PCIe Gen5x4
+  PSU: SUPERFLOWER LEADEX VII GOLD 1300W
+  CPU_FAN: Arctic Freezer-4U-M
+  CHA: Geometric Future Model 4 Caliburn
+  CHA_FAN: 3x Thermaltake TOUGHFAN 12 Pro
+  ```
+
+![bg right:40%](assets\DSC01682.JPG)
 
 ## レンダリングマシン
 
 - 2024 年まで使っていた水冷マシンを小型化したもの。
 - 電力的なコストパフォーマンスは悪いが、まだまだ現役。
 
-スペック表
+  ```
+  CPU: AMD Ryzen 9 5950X
+  M/B: MSI Prestige X570 Creation
+  GPU: 2x Zotac GeForce RTX 3090 Trinity
+  RAM: Kingston 384GB (4x DDR5-5600 RDIMM ECC 96GB Micron Die)
+  SSD: Corsair Force Series MP600
+  PSU: SUPERFLOWER LEADEX VII GOLD 1300W
+  CHA: Jonsbo TK-1 White
+  CHA_FAN: 2x Noctua NF-F12 industrialPPC-3000 PWM
+  CHA_FAN: 2x Noctua NF-A12X15
+  ```
+
+![bg right:40%](assets\DSC01743.JPG)
 
 ## リモートデスクトップ環境
 
