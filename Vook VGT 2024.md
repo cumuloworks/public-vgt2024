@@ -10,7 +10,7 @@ style: |
     border-radius: 18px;
   }
   code {
-    background-color: #000000;
+    background-color: #1d3744;
     color: #1d3744;
   }
   h1 {
@@ -24,6 +24,7 @@ style: |
   }
   a {
     color: #ffffff;
+    font-weight: bold;
   }
   img {
     display: block;
@@ -32,6 +33,15 @@ style: |
   }
   li {
     font-size: 24px;
+  }
+  table {
+    border-radius: 18px;
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  th, td {
+    border: 1px solid #ffffff;
+    background-color: #1d3744;
   }
   video {
     display: block;
