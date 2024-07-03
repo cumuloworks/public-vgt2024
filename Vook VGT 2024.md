@@ -1,5 +1,5 @@
 ---
-marp: false
+marp: true
 backgroundColor: #1d3744;
 color: #ffffff;
 style: |
@@ -117,13 +117,15 @@ Cumuloworks, Inc.
 ## Mac Mini サーバー ([M2 Mac Mini](https://www.apple.com/jp/mac-mini/))
 
 - 10GbE オプションの M2 Mac Mini を 2 台ラックマウントで導入。
+- 2 台を異なる用途で運用。
 
 ### Mac Mini 1 台目
 
 安定動作が期待されるサーバー機能を集約
 
-- オンプレミス動画レビューサービスのサーバー
-- VPN サーバー（運用休止中）
+- Docker コンテナで運用している社内ツールを運用
+- [Kollaborate](https://www.kollaborate.tv/) のサーバー
+- [OpenVPN](https://openvpn.net/) サーバー(運用休止中)
 - DaVinci Resolve のデータベースサーバー
 
 ### Mac Mini 2 台目
@@ -157,7 +159,7 @@ Mac 環境必須のアプリケーションなどを実行
   CHA_FAN: 3x Thermaltake TOUGHFAN 12 Pro
   ```
 
-![bg right:40%](assets/DSC01682.JPG)
+  ![bg right:40%](assets/DSC01682.JPG)
 
 ## レンダリングマシン
 
@@ -176,20 +178,20 @@ Mac 環境必須のアプリケーションなどを実行
   CHA_FAN: 2x Noctua NF-A12X15
   ```
 
-![bg right:40%](assets/DSC01743.JPG)
+  ![bg left:40%](assets/DSC01743.JPG)
 
-## リモートデスクトップ環境
+## リモートデスクトップ環境 ([Parsec](https://parsec.app/))
 
 - Parsec を使ったリモートデスクトップで、運用しているマシンにアクセス可能。
 - 遅延が少なく、リモートデスクトップアプリケーションの中では一番良い。
 - 広色域・固定フレームレートにも対応していて、映像作業にも使える。
-- Chrome Remote Desktop も併用して二重化している。
+- [Chrome Remote Desktop](https://remotedesktop.google.com/) も併用して二重化している。
 
 # ワークフロー紹介
 
 ## 進行管理・コミュニケーション
 
-- 社内では基本的に Notion, Discord に集約。
+- 社内では基本的に [Notion](https://www.notion.so/), [Discord](https://discord.com/) に集約。
 - プロジェクトに合わせて柔軟に対応
 
 ## ファイルの命名規則・整理のルールなど
@@ -235,6 +237,13 @@ Mac 環境必須のアプリケーションなどを実行
 
 - 2024 年始め、LTO-8 ドライブを導入。Thunderbolt 接続で、Mac Mini サーバーで運用している。
 - YoYotta を使用してアーカイブ・リトリーブ操作を行い、出力された CSV データを SQL データベースに登録、Web サイトからユーザーごとに参照できるようにしている。
+
+## アーカイブのカテゴライズ
+
+| 進行中のデータ                 | 直近のデータ   | 1 年以上経過したデータ |
+| ------------------------------ | -------------- | ---------------------- |
+| メインサーバー                 | メインサーバー | LTO-8 テープ           |
+| オフサイトバックアップサーバー | LTO-8 テープ   | -                      |
 
 ## LTO について
 
