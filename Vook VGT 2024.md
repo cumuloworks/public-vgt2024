@@ -3,15 +3,16 @@ marp: true
 backgroundColor: #1d3744;
 color: #ffffff;
 style: |
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Inter:wght@400;700&family=IBM+Plex+Mono:wght@700&display=swap');
 
   section {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Inter', 'Noto Sans JP',  sans-serif;
     border-radius: 18px;
   }
   code {
     background-color: #1d3744;
     color: #1d3744;
+    font-family: 'IBM Plex Mono', monospace;
   }
   h1 {
     text-align: center;
@@ -30,6 +31,7 @@ style: |
     display: block;
     margin: 0 auto;
     background-color: transparent;
+    border-radius: 18px;
   }
   li {
     font-size: 24px;
@@ -56,7 +58,9 @@ headingDivider: 3
 
 # 快適な制作環境の作り方
 
-![w:480](assets/typography_white.png)
+<img src="assets/typography_white.png" width="360" style="transform: translateY(200%);">
+
+![bg brightness:50%](assets/photo_rack1.jpg)
 
 # 自己紹介
 
