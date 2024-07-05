@@ -196,18 +196,111 @@ Cumuloworks が導入している機材の紹介
 
 ## メインストレージサーバー ([Synology RS3621xs+](https://www.synology.com/ja-jp/products/RS3621xs+))
 
-すべてのデータが集約される **200TB**のメインサーバー。
-ストレージサーバー以外の機能も持たせている。
+2023 年導入の **200TB**のメインサーバー。
+**ストレージ以外の機能**も集約。
 
-- すべての作業用ファイル・アセットなどを集約。
-  - ファイルの権限設定
-  - アクセスログ
-  - バージョン履歴の保存
-- 社内ツールの Web サーバーとしての利用。
-- Docker コンテナを走らせたり。
-- 各作業マシンのシステムイメージのバックアップを取っている。
+```
+Intel® Xeon® D-1541 8-core 2.1 GHz
+RAM: 32GB DDR4 ECC RDIMM (2x 16GB)
 
-![bg vertical](assets/web_rs3621xs+.png)
+12x 20TB Ultrastar DC HC560 (7200rpm)
+  +
+2x 800GB Synology SNV3510 NVMe SSD (Cache)
+
+SHR-2 (RAID 6) ... 2 ディスク障害耐性
+```
+
+![bg right:40% 125%](assets/photo_mainserver.JPG)
+
+### 0. 導入のきっかけ
+
+Google Drive の容量無制限が**サ終**
+↓
+「保存したかったら年間 400 万円払ってね」
+↓
+行き場を失った 100TB のデータ。
+↓
+**オンプレ化を決意**
+↓
+以後、ストレージ以外もオンプレ化の流れ
+
+![bg right:40% 103%](assets/screenshot_disaster.png)
+
+### なぜオンプレ化を推し進めるのか
+
+#### ⭕️ メリット
+
+- **常にデータが手元にある安心感**
+  - TB 単位のデータは、クラウドにアップロード・ダウンロードするだけで膨大な時間がかかる
+- サードパーティーのサービスへの依存から脱却できる
+  - 急なサービス内容の変更や価格改定による影響を受けない
+  - 月額料金がかからない
+- たのしい・クール
+
+#### ❌ デメリット（対策が必要）
+
+- ランサムウェアなどセキュリティ面での不安
+- 災害などによるデータ損失リスク
+- ストレージなどの機材の購入・管理コストがかかる
+
+### 1. ストレージサーバーとして
+
+プロジェクトファイル・アセットなどを集約。
+
+- SMB プロトコル + 10GbE 接続で、高速なファイルアクセス
+- 社内でデータをリアルタイム共有(同期のラグなし)
+- アクセスログ・バージョン履歴の保存 (Synology Drive)
+  ![bg right 80%](assets/screenshot_drives.png)
+
+### 2. バージョン管理 (Version Explorer)
+
+すべてのフォルダ・ファイルの変更を保存し、削除したデータも含めて任意のタイミングに遡ることができる。([Synology Drive](https://www.synology.com/ja-jp/dsm/feature/drive))
+
+- 間違えてファイルを上書きしてしまった
+- 途中からプロジェクトファイルが壊れた
+- 前のレンダーデータが必要になった
+
+![bg right:40% 80%](assets/screenshot_versionexplorer.png)
+
+### 3. 社外とのファイル同期
+
+[Synology Drive](https://www.synology.com/ja-jp/dsm/feature/drive) を使って、NAS 上のファイルを社外の共同作業者に同期してもらう
+
+- オンプレミスの Dropbox のような感じ
+- ユーザーとファイルの組み合わせで、細かく権限を設定可能。
+
+  <hr>
+
+#### 使用例
+
+- 社内で制作したモデルデータをリアルタイムで受け渡し
+- 社外で作業してもらったデータをアップロードしてもらう
+
+![bg right:40% 80%](assets/screenshot_permissions.png)
+
+### 4. 社外とのファイルのリンク共有
+
+ファイルの共有リンクを発行して、外部の人にファイルをダウンロードしてもらう。
+
+- オンプレの Gigafile 便のような感じ。
+- フォルダごと・ファイルごとにすぐにリンクを発行して共有できるので便利。
+  - e.g. エディターと共同でオンライン作業をする場面などで、フォルダから最新ファイルを随時ダウンロードしてもらえる。
+- 有効期限やパスワードの設定も可能。
+
+  ![h:192px](assets/screenshot_linkshare.png)
+
+### 5. その他機能
+
+1. Docker コンテナの運用 ([Container Manager](https://www.synology.com/dsm/feature/container-manager))
+2. Windows や Linux のバーチャルマシンの運用 ([Virtual Machine Manager](https://www.synology.com/dsm/feature/virtual_machine_manager))
+
+#### 使用例
+
+- Windows で時間がかかる処理を、NAS のバーチャルマシンで行う。
+- 社内ツールの Web サーバー・SQL サーバーとしての利用。
+
+- [PhotoPrism](https://www.photoprism.app/)のサーバーとして運用。
+  - ミラーレスカメラで撮影 → FTP で 直接 NAS にアップロード → PhotoPrism で管理
 
 ## オフサイトバックアップサーバー ([Synology DS1618+](https://www.synology.com/ja-jp/products/DS1621+))
 
