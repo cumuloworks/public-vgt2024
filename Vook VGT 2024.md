@@ -35,12 +35,12 @@ style: |
     font-size: 24px;
   }
   table {
-    border-radius: 18px;
+    border: 2px solid #ffffff;
     border-collapse: collapse;
     margin: 0 auto;
   }
   th, td {
-    border: 1px solid #ffffff;
+    border: 2px solid #ffffff;
     background-color: #1d3744;
   }
   video {
