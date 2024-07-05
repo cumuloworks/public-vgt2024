@@ -16,13 +16,27 @@ style: |
     color: #ffffff;
   }
   code {
+    color: #ffffff;
+    font-family: 'Inter', 'M PLUS 2',  sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  marp-pre {
     background-color: #1d3744;
-    color: #1d3744;
+    border: 2px solid #ffffff;
+    color: #ffffff;
     font-family: 'IBM Plex Mono', monospace;
+    font-size: 18px;
+    width: auto;
+    line-height: 1.5;
+    border-radius: 9px;
   }
   h1 {
     text-align: center;
     font-size: 64px;
+  }
+  p {
+    font-size: 24px;
   }
   blockquote {
     color: #ffffff;
@@ -43,12 +57,14 @@ style: |
   }
   table {
     border: 2px solid #ffffff;
-    border-collapse: collapse;
+    border-radius: 9px;
+    border-collapse: separate;
     margin: 0 auto;
   }
   th, td {
-    border: 2px solid #ffffff;
+    font-size: 18px;
     background-color: #1d3744;
+    border-radius: 0;
   }
   video {
     display: block;
