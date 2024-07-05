@@ -83,7 +83,7 @@ Cumuloworks, Inc.
 > 広告・エンタメ映像など幅広く制作。
 > 7 月からは[@shigu](https://twitter.com/shgumo)との 2 名体制。
 
-![bg right:40%](assets/DSC01500.JPG)
+![bg right:40%](assets/photo_office.JPG)
 
 ## [SHOWREEL 2024](https://cumulo.works/)
 
@@ -91,7 +91,7 @@ Cumuloworks, Inc.
 
 # 機材紹介
 
-## メインルーター ([YAMAHA RTX1300](https://network.yamaha.com/products/routers/rtx1300))
+## メインルーター
 
 - NTT 光クロス(10Gbps)を引き込んでおり、スイッチを介して分配される。
 - 高スループットの回線を契約することにより、データのやり取りでストレスが減った。
@@ -119,6 +119,8 @@ Cumuloworks, Inc.
 - 10GbE オプションの M2 Mac Mini を 2 台ラックマウントで導入。
 - 2 台を異なる用途で運用。
 
+![bg left:40%](assets/photo_macmini.JPG)
+
 ### Mac Mini 1 台目
 
 安定動作が期待されるサーバー機能を集約
@@ -142,6 +144,18 @@ Mac 環境必須のアプリケーションなどを実行
 - 高負荷時で、15 分程度。
 - NAS と連携しており、自動でシャットダウンされる。
 
+![bg right:40%](assets/photo_ups.JPG)
+
+## ネットワーク構成図
+
+#### ポイント
+
+- すべて 10GbE 接続
+- 10GbE スイッチを介して相互接続
+- NAS は 20GbE 帯域を確保
+
+![bg right](assets\diagram_network.png)
+
 ## メインマシン
 
 - 2024 年始めに導入したメインマシン。After Effects や DaVinci Resolve での作業がストレスなく行えるように、メモリを 384GB に。
@@ -159,7 +173,7 @@ Mac 環境必須のアプリケーションなどを実行
   CHA_FAN: 3x Thermaltake TOUGHFAN 12 Pro
   ```
 
-  ![bg right:40%](assets/DSC01682.JPG)
+  ![bg right:40%](assets/photo_mainmachine.JPG)
 
 ## レンダリングマシン
 
@@ -178,7 +192,7 @@ Mac 環境必須のアプリケーションなどを実行
   CHA_FAN: 2x Noctua NF-A12X15
   ```
 
-  ![bg left:40%](assets/DSC01743.JPG)
+  ![bg left:40%](assets/photo_rendermachine.JPG)
 
 ## リモートデスクトップ環境 ([Parsec](https://parsec.app/))
 
@@ -246,6 +260,8 @@ Mac 環境必須のアプリケーションなどを実行
 | オフサイトバックアップサーバー | LTO-8 テープ   | -                      |
 
 ## LTO について
+
+![bg right:60%](assets/photo_tapes.JPG)
 
 ### LTO とは。LTO と HDD の違い。
 
