@@ -1,0 +1,75 @@
+<mxfile host="65bd71144e">
+    <diagram name="Page-1" id="iNtv76hY1IIQZ22egwUf">
+        <mxGraphModel dx="1158" dy="1297" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="JPBA4zCamoGnfxITxpam-1" value="Router" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontFamily=Inter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DInter;fontStyle=1;align=center;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="265" y="425" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="JPBA4zCamoGnfxITxpam-10" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=none;endFill=0;strokeWidth=2;fontFamily=Inter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DInter;fontStyle=1;align=center;exitX=0.987;exitY=0.255;exitDx=0;exitDy=0;exitPerimeter=0;fillColor=none;" parent="1" source="JPBA4zCamoGnfxITxpam-2" target="JPBA4zCamoGnfxITxpam-3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="JPBA4zCamoGnfxITxpam-11" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=none;endFill=0;strokeWidth=2;fontFamily=Inter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DInter;fontStyle=1;align=center;fillColor=none;" parent="1" source="JPBA4zCamoGnfxITxpam-2" target="JPBA4zCamoGnfxITxpam-5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="JPBA4zCamoGnfxITxpam-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeWidth=2;fontFamily=Inter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DInter;fontStyle=1;align=center;fillColor=none;" parent="1" source="JPBA4zCamoGnfxITxpam-2" target="JPBA4zCamoGnfxITxpam-1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="JPBA4zCamoGnfxITxpam-16" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;strokeWidth=2;fontFamily=Inter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DInter;fontStyle=1;align=center;exitX=0.996;exitY=0.618;exitDx=0;exitDy=0;exitPerimeter=0;fillColor=none;" parent="1" source="JPBA4zCamoGnfxITxpam-2" target="JPBA4zCamoGnfxITxpam-15" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="435" y="565"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="JPBA4zCamoGnfxITxpam-24" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1.007;exitY=0.123;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;endArrow=none;endFill=0;strokeWidth=2;exitPerimeter=0;fillColor=none;" parent="1" source="JPBA4zCamoGnfxITxpam-2" target="JPBA4zCamoGnfxITxpam-3" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="415" y="435"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="JPBA4zCamoGnfxITxpam-29" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;dashed=1;strokeWidth=2;textOpacity=50;opacity=50;exitX=1.002;exitY=0.72;exitDx=0;exitDy=0;exitPerimeter=0;fillColor=none;" parent="1" source="JPBA4zCamoGnfxITxpam-2" target="JPBA4zCamoGnfxITxpam-28" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="385" y="533" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="JPBA4zCamoGnfxITxpam-2" value="XS508M" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontFamily=Inter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DInter;fontStyle=1;align=center;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="265" y="505" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="JPBA4zCamoGnfxITxpam-3" value="RS3621xs+" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontFamily=Inter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DInter;fontStyle=1;align=center;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="465" y="345" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="JPBA4zCamoGnfxITxpam-4" value="Mac Mini 1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontFamily=Inter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DInter;fontStyle=1;align=center;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="465" y="425" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="JPBA4zCamoGnfxITxpam-5" value="Mac Mini 2" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontFamily=Inter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DInter;fontStyle=1;align=center;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="465" y="505" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="JPBA4zCamoGnfxITxpam-8" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=none;endFill=0;strokeWidth=2;fontFamily=Inter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DInter;fontStyle=1;align=center;exitX=0.995;exitY=0.378;exitDx=0;exitDy=0;exitPerimeter=0;fillColor=none;" parent="1" source="JPBA4zCamoGnfxITxpam-2" target="JPBA4zCamoGnfxITxpam-4" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="435" y="485"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="JPBA4zCamoGnfxITxpam-15" value="Main Machine" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontFamily=Inter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DInter;fontStyle=1;align=center;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="465" y="585" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="JPBA4zCamoGnfxITxpam-21" value="Internet" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;fontFamily=Inter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DInter;fontStyle=1;align=center;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="265" y="345" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="JPBA4zCamoGnfxITxpam-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;strokeWidth=2;fontFamily=Inter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DInter;fontStyle=1;align=center;fillColor=none;" parent="1" source="JPBA4zCamoGnfxITxpam-21" target="JPBA4zCamoGnfxITxpam-1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="JPBA4zCamoGnfxITxpam-28" value="Others..." style="rounded=0;whiteSpace=wrap;html=1;opacity=50;strokeWidth=2;fontFamily=Inter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DInter;fontStyle=1;fontSize=11;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="465" y="665" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="JPBA4zCamoGnfxITxpam-32" value="※簡略化したイメージ" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="335" y="725" width="180" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
