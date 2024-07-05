@@ -3,10 +3,10 @@ marp: true
 backgroundColor: #1d3744;
 color: #ffffff;
 style: |
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Inter:wght@400;700&family=IBM+Plex+Mono:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@400;700&family=Inter:wght@400;700&family=IBM+Plex+Mono:wght@700&display=swap');
 
   section {
-    font-family: 'Inter', 'Noto Sans JP',  sans-serif;
+    font-family: 'Inter', 'M PLUS 2',  sans-serif;
     border-radius: 18px;
   }
   code {
