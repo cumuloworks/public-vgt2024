@@ -2,12 +2,18 @@
 marp: true
 backgroundColor: #1d3744;
 color: #ffffff;
+footer: "VGT 2024 | © 2024 Cumuloworks, Inc."
 style: |
   @import url('https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@400;700&family=Inter:wght@400;700&family=IBM+Plex+Mono:wght@700&display=swap');
 
   section {
     font-family: 'Inter', 'M PLUS 2',  sans-serif;
     border-radius: 18px;
+  }
+  footer {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #ffffff;
   }
   code {
     background-color: #1d3744;
@@ -27,8 +33,7 @@ style: |
     color: #ffffff;
     font-weight: bold;
   }
-  img {
-    display: block;
+  img, figure {
     margin: 0 auto;
     background-color: transparent;
     border-radius: 18px;
@@ -53,64 +58,156 @@ style: |
     border-radius: 18px;
     width: 80%;
   }
+  hr {
+    padding: 1px;
+  }
+
 headingDivider: 3
+paginate: false
 ---
 
 # 快適な制作環境の作り方
 
-<img src="assets/typography_white.png" width="360" style="transform: translateY(200%);">
-
 ![bg brightness:50%](assets/photo_rack1.jpg)
+
+<img src="assets/typography_white.png" height="96" style="transform: translateY(0%);">
 
 # 自己紹介
 
-## Tomoya Eguchi
+## Tomoya Eguchi (Cumuloworks)
 
-合同会社キュムロワークス 代表
-Freelance Director
+**Freelance Director**
 Motion Designer, CG Generalist
 最近ちょっと Developer
 
-> 2014 年 映像制作を始める
-> 2017 年 大学に通いながらフリーランスに
-> 2018 年 株式会社ナナメ 入社
-> 2020 年 退社、独立してフリーランスに
-> 2021 年 法人化
+<hr>
+
+- 2014 年 映像制作を始める
+- 2017 年 大学に通いながらフリーランスに
+- 2018 年 株式会社ナナメ 入社
+- 2020 年 退社、独立してフリーランスに
+- 2021 年 法人化
+
+<!-- 最近は、会社として映像制作 -->
 
 ![w:360 h:360 bg right:40%](assets/qr_x.png)
 
-## 合同会社キュムロワークスについて
+## 合同会社キュムロワークス
 
 Cumuloworks, Inc.
-2021 年 9 月設立
+2021 年 9 月設立 (もうすぐ 4 期目)
 
-> 広告・エンタメ映像など幅広く制作。
-> 7 月からは[@shigu](https://twitter.com/shgumo)との 2 名体制。
+> 広告・エンタメの CG 映像制作がメイン
+> 6 月からは[@shigu](https://twitter.com/shgumo)との 2 名体制
+
+> [SHOWREEL 2024](https://cumulo.works/)
 
 ![bg right:40%](assets/photo_office.JPG)
 
 ## [SHOWREEL 2024](https://cumulo.works/)
 
-<video src="https://file.cumulo.works:48162/content/media/2024/07/Cumuloworks_SHOWREEL2023_v1.mp4" controls></video>
+<video src="assets\Cumuloworks_SHOWREEL2024_vgt.mp4" controls ></video>
+
+## <!-- 最近のWORK -->
+
+![bg](assets/work_4view.jpg)
+
+# 本日の内容
+
+<center>
+
+#### 1. 機材紹介
+
+Cumuloworks が導入している機材の紹介
+
+#### 2. ワークフロー紹介
+
+機材をどのように制作に活かしているか
+
+#### 3. 今後の展望
+
+最近興味があること、今後の拡張の計画（妄想）
+
+</center>
 
 # 機材紹介
 
-## メインルーター
+## ラック ([StarTech 4POSTRACK8U](https://www.startech.com/ja-jp/server-management/4postrack8u))
 
-- NTT 光クロス(10Gbps)を引き込んでおり、スイッチを介して分配される。
+2023 年に導入したラック。
+
+- 奥行きを調整できるタイプで、高さは 8U。
+- デスク周りに機材が散らばらず、コンパクトに収まる。
+- ⭕ 見た目がクール ❌️ あらゆる付属品の価格が高い
+
+  ![bg brightness:50%](assets/photo_rack2.jpg)
+
+## ラック構成
+
+<center>
+
+![h:512](assets/diagram_rack.JPG)
+
+</center>
+
+## メインルーター ([YAMAHA RTX1300](https://network.yamaha.com/products/routers/rtx1300/))
+
+**NTT 光クロス(10Gbps)** を引き込んでおり、スイッチを介して分配される。
+
+- ⭕️ NTT のレンタルルーター([XG-100NE](https://web116.jp/shop/hikari_r/xg_100ne/xg_100ne_00.html))よりも高い安定性。
 - 高スループットの回線を契約することにより、データのやり取りでストレスが減った。
+- インターネットに直に接する機材 → セキュリティ面で重要な役割。
+- Mac アドレスを基に、主要な LAN 内デバイスの IP アドレスをルーター側で固定。
 
 ## メインスイッチ ([NETGEAR XS508M](https://www.netgear.com/jp/business/wired/switches/unmanaged/xs508m))
 
-- 8 ポートのシンプルな 10GbE スイッチ。
-- 排熱も良好で、本格的に 10GbE 環境を構築したい方にはおすすめ
-- ここから各作業用マシン・サーバーなどへネットワークが分配される。
+8 ポートのシンプルな **オール 10GbE** スイッチ。
 
-## メインサーバー ([Synology RS3621xs+](https://www.synology.com/ja-jp/products/RS3621xs+))
+- 排熱も良好で、本格的に 10GbE 化を始めたい方にはおすすめ。
+- ここから各作業用マシン・サーバーなどへネットワークが分配される。
+- 8 ポートで足りず、買い替えを検討中。
+
+<br>
+
+![w:720px](assets/web_xs508m.jpg)
+
+## UPS ([OMRON BN75R](https://socialsolution.omron.com/jp/ja/products_service/ups/product/bn75-300r/bn75-300r.html))
+
+ラック全体の電源をバックアップする、最大 680W 対応の UPS。
+
+- 現環境の高負荷時で、10 分程度は電力を維持可能。
+- NAS と USB 接続することで、電力喪失時に安全にシャットダウンされる。
+- 商用電源が不安定になっても、安全に電力供給できる（見落とされがちなメリット）。
+  - 電力逼迫で、電圧低下や周波数不安定化が起こることは今後もありそう。
+- ⭕️ 前面の液晶ディスプレイで、電力消費量やバッテリー残量などが確認できて便利。
+
+![bg brightness:30%](assets/photo_ups.JPG)
+
+## ネットワーク構成
+
+#### ポイント
+
+- すべて 10GbE 接続
+- 10GbE スイッチを介して相互接続
+- NAS は 20GbE 帯域を確保
+  - 理論上、Internet <-> NAS と、各マシン <-> NAS それぞれで 10Gbps の帯域を確保。
+
+![bg right:45%](assets\diagram_network.png)
+
+## メインストレージサーバー ([Synology RS3621xs+](https://www.synology.com/ja-jp/products/RS3621xs+))
+
+すべてのデータが集約される **200TB**のメインサーバー。
+ストレージサーバー以外の機能も持たせている。
 
 - すべての作業用ファイル・アセットなどを集約。
-- 社内ツールの Web サーバーとしての利用
-- Docker コンテナを走らせたり
+  - ファイルの権限設定
+  - アクセスログ
+  - バージョン履歴の保存
+- 社内ツールの Web サーバーとしての利用。
+- Docker コンテナを走らせたり。
+- 各作業マシンのシステムイメージのバックアップを取っている。
+
+![bg vertical](assets/web_rs3621xs+.png)
 
 ## オフサイトバックアップサーバー ([Synology DS1618+](https://www.synology.com/ja-jp/products/DS1621+))
 
@@ -125,7 +222,7 @@ Cumuloworks, Inc.
 
 ![bg left:40%](assets/photo_macmini.JPG)
 
-### Mac Mini 1 台目
+#### Mac Mini 1 台目
 
 安定動作が期待されるサーバー機能を集約
 
@@ -134,31 +231,13 @@ Cumuloworks, Inc.
 - [OpenVPN](https://openvpn.net/) サーバー(運用休止中)
 - DaVinci Resolve のデータベースサーバー
 
-### Mac Mini 2 台目
+#### Mac Mini 2 台目
 
 Mac 環境必須のアプリケーションなどを実行
 
 - Mac 環境でのツールなどの検証
 - Thunderbolt 接続された LTO ドライブへのアクセス
 - DaVinci Resolve でのリモートレンダリング
-
-## UPS ([OMRON BN75R](https://socialsolution.omron.com/jp/ja/products_service/ups/product/bn75-300r/bn75-300r.html))
-
-- ラック全体の電源をバックアップする UPS。
-- 高負荷時で、15 分程度。
-- NAS と連携しており、自動でシャットダウンされる。
-
-![bg right:40%](assets/photo_ups.JPG)
-
-## ネットワーク構成図
-
-#### ポイント
-
-- すべて 10GbE 接続
-- 10GbE スイッチを介して相互接続
-- NAS は 20GbE 帯域を確保
-
-![bg right](assets\diagram_network.png)
 
 ## メインマシン
 
@@ -200,10 +279,12 @@ Mac 環境必須のアプリケーションなどを実行
 
 ## リモートデスクトップ環境 ([Parsec](https://parsec.app/))
 
-- Parsec を使ったリモートデスクトップで、運用しているマシンにアクセス可能。
-- 遅延が少なく、リモートデスクトップアプリケーションの中では一番良い。
-- 広色域・固定フレームレートにも対応していて、映像作業にも使える。
+- リモートデスクトップで、運用しているマシンにアクセス可能。
+- ラックマウントの Mac へもリモートアクセスで、KVM 的に使う。
+- 遅延が小さく、広色域・固定フレームレートにも対応していて、映像作業にも使える。
 - [Chrome Remote Desktop](https://remotedesktop.google.com/) も併用して二重化している。
+
+![bg right:40% h:90%](assets/screenshot_parsec.png)
 
 # ワークフロー紹介
 
@@ -217,10 +298,18 @@ Mac 環境必須のアプリケーションなどを実行
 - GitHub で、社内での命名規則のルールを明確化
 - 公開中なので、参考にしてほしい
 
+## レンダリングワークフロー
+
+- WIP
+
 ## After Effects でタイムコードのオーバーレイの作成
 
 - プレビズやオフラインデータを起点として制作する場合、各ショット・フレームを正確に把握するために独自のオーバーレイを導入
 - 日時・マシン名・タイムコードなどがすぐ把握でき、CG ソフトとのやり取りや、エラーフレームの除去などで活用
+
+![bg right](assets/photo_overlay.JPG)
+
+## Nobe Omniscope + NDI でスコープの表示
 
 ## スプレッドシートでカットの情報を一元管理する
 
@@ -243,6 +332,8 @@ Mac 環境必須のアプリケーションなどを実行
 - 編集は主に DaVinci Resolve を使用。
 - Mac Mini サーバーで運用中のデータベースサーバーを使って、複数人でタイムラインを共有できる。
 - Mac でリモートレンダリングを設定することで、Windows マシンから ProRes でレンダリングできる。
+
+![](assets/screenshot_prores.png)
 
 # プロジェクトのアーカイブ
 
