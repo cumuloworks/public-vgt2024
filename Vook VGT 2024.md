@@ -84,9 +84,9 @@ paginate: false
 
 # 快適な制作環境の作り方
 
-![bg brightness:50%](assets/photo_rack1.jpg)
+![bg brightness:50%](assets/photo/photo_rack1.jpg)
 
-<img src="assets/typography_white.png" height="96" style="transform: translateY(0%);">
+<img src="assets/logo/logo_cumuloworks.png" height="96" style="transform: translateY(0%);">
 
 # 自己紹介
 
@@ -106,7 +106,7 @@ Motion Designer, CG Generalist
 
 <!-- 最近は、会社として映像制作 -->
 
-![w:360 h:360 bg right:40%](assets/qr_x.png)
+![w:360 h:360 bg right:40%](assets/qr/qr_x.png)
 
 ## 合同会社キュムロワークス
 
@@ -118,7 +118,7 @@ Cumuloworks, Inc.
 
 > [SHOWREEL 2024](https://cumulo.works/)
 
-![bg right:40%](assets/photo_office.JPG)
+![bg right:40%](assets/photo/photo_office.JPG)
 
 ## [SHOWREEL 2024](https://cumulo.works/)
 
@@ -126,7 +126,7 @@ Cumuloworks, Inc.
 
 ## <!-- 最近のWORK -->
 
-![bg](assets/work_4view.jpg)
+![bg](assets/work/work_4view.jpg)
 
 # 本日の内容
 
@@ -158,13 +158,13 @@ Cumuloworks が導入している機材の紹介
 - デスク周りに機材が散らばらず、コンパクトに収まる。
 - ⭕ 見た目がクール ❌️ あらゆる付属品の価格が高い
 
-  ![bg brightness:50%](assets/photo_rack2.jpg)
+  ![bg brightness:50%](assets/photo/photo_rack2.jpg)
 
 ## ラック構成
 
 <center>
 
-![h:512](assets/diagram_rack.JPG)
+![h:512](assets/diagram/diagram_rack.JPG)
 
 </center>
 
@@ -187,7 +187,7 @@ Cumuloworks が導入している機材の紹介
 
 <br>
 
-![w:720px](assets/web_xs508m.jpg)
+![w:720px](assets/web/web_xs508m.jpg)
 
 ## UPS ([OMRON BN75R](https://socialsolution.omron.com/jp/ja/products_service/ups/product/bn75-300r/bn75-300r.html))
 
@@ -199,7 +199,7 @@ Cumuloworks が導入している機材の紹介
   - 電力逼迫で、電圧低下や周波数不安定化が起こることは今後もありそう。
 - ⭕️ 前面の液晶ディスプレイで、電力消費量やバッテリー残量などが確認できて便利。
 
-![bg brightness:30%](assets/photo_ups.JPG)
+![bg brightness:30%](assets/photo/photo_ups.JPG)
 
 ## ネットワーク構成
 
@@ -228,7 +228,7 @@ RAM: 32GB DDR4 ECC RDIMM (2x 16GB)
 SHR-2 (RAID 6) ... 2 ディスク障害耐性
 ```
 
-![bg right:40% 125%](assets/photo_mainserver.JPG)
+![bg right:40% 125%](assets/photo/photo_mainserver.JPG)
 
 ### 0. 導入のきっかけ
 
@@ -242,7 +242,7 @@ Google Drive の容量無制限が**サ終**
 ↓
 以後、ストレージ以外もオンプレ化の流れ
 
-![bg right:40% 103%](assets/screenshot_disaster.png)
+![bg right:40% 103%](assets/screenshot/screenshot_disaster.png)
 
 ### なぜオンプレ化を推し進めるのか
 
@@ -268,7 +268,7 @@ Google Drive の容量無制限が**サ終**
 - SMB プロトコル + 10GbE 接続で、高速なファイルアクセス
 - 社内でデータをリアルタイム共有(同期のラグなし)
 - アクセスログ・バージョン履歴の保存 (Synology Drive)
-  ![bg right 80%](assets/screenshot_drives.png)
+  ![bg right 80%](assets/screenshot/screenshot_drives.png)
 
 ### 2. バージョン管理 (Version Explorer)
 
@@ -278,7 +278,7 @@ Google Drive の容量無制限が**サ終**
 - 途中からプロジェクトファイルが壊れた
 - 前のレンダーデータが必要になった
 
-![bg right:40% 80%](assets/screenshot_versionexplorer.png)
+![bg right:40% 80%](assets/screenshot/screenshot_versionexplorer.png)
 
 ### 3. 社外とのファイル同期
 
@@ -294,7 +294,7 @@ Google Drive の容量無制限が**サ終**
 - 社内で制作したモデルデータをリアルタイムで受け渡し
 - 社外で作業してもらったデータをアップロードしてもらう
 
-![bg right:40% 80%](assets/screenshot_permissions.png)
+![bg right:40% 80%](assets/screenshot/screenshot_permissions.png)
 
 ### 4. 社外とのファイルのリンク共有
 
@@ -305,7 +305,7 @@ Google Drive の容量無制限が**サ終**
   - e.g. エディターと共同でオンライン作業をする場面などで、フォルダから最新ファイルを随時ダウンロードしてもらえる。
 - 有効期限やパスワードの設定も可能。
 
-  ![h:192px](assets/screenshot_linkshare.png)
+  ![h:192px](assets/screenshot/screenshot_linkshare.png)
 
 ### 5. その他機能
 
@@ -335,7 +335,7 @@ Google Drive の容量無制限が**サ終**
 - Mac Mini だけコストパフォーマンスが異常
   - 当時 10 万円を切っていた
 
-![bg left:40%](assets/photo_macmini.JPG)
+![bg left:40%](assets/photo/photo_macmini.JPG)
 
 ### Mac Mini 1 台目
 
@@ -347,7 +347,7 @@ Google Drive の容量無制限が**サ終**
 - [DaVinci Resolve](https://www.blackmagicdesign.com/jp/products/davinciresolve/) の **データベースサーバー**
 - [Team Render](https://www.maxon.net/ja/cinema-4d/features/network-rendering) の **サーバー**
 
-![bg brightness:50%](assets/screenshot_mac1.png)
+![bg brightness:50%](assets/screenshot/screenshot_mac1.png)
 
 ### Mac Mini 2 台目
 
@@ -357,7 +357,7 @@ Mac 環境必須のアプリケーションなどを実行
 - Thunderbolt 接続された LTO ドライブへのアクセス
 - DaVinci Resolve でのリモート ProRes レンダリング
 
-![bg brightness:50%](assets/screenshot_mac2.png)
+![bg brightness:50%](assets/screenshot/screenshot_mac2.png)
 
 ## リモートデスクトップ環境 ([Parsec](https://parsec.app/))
 
@@ -366,7 +366,7 @@ Mac 環境必須のアプリケーションなどを実行
 - 遅延が小さく、広色域・固定フレームレートにも対応していて、映像作業にも使える。
 - [Chrome Remote Desktop](https://remotedesktop.google.com/) も併用して二重化している。
 
-![bg right:40% h:90%](assets/screenshot_parsec.png)
+![bg right:40% h:90%](assets/screenshot/screenshot_parsec.png)
 
 # ワークフロー紹介
 
@@ -387,7 +387,7 @@ Mac 環境必須のアプリケーションなどを実行
   CHA_FAN: 3x Thermaltake TOUGHFAN 12 Pro
   ```
 
-  ![bg right:40%](assets/photo_mainmachine.JPG)
+  ![bg right:40%](assets/photo/photo_mainmachine.JPG)
 
 ## レンダリングマシン
 
@@ -408,8 +408,8 @@ Mac 環境必須のアプリケーションなどを実行
   WATER COOLING: EKWB
   ```
 
-  ![bg vertical left:40%](assets/photo_rendermachine1.JPG)
-  ![bg vertical left:40%](assets/photo_rendermachine2.JPG)
+  ![bg vertical left:40%](assets/photo/photo_rendermachine1.JPG)
+  ![bg vertical left:40%](assets/photo/photo_rendermachine2.JPG)
 
 ## 進行管理・コミュニケーション
 
@@ -430,7 +430,7 @@ Mac 環境必須のアプリケーションなどを実行
 - プレビズやオフラインデータを起点として制作する場合、各ショット・フレームを正確に把握するために独自のオーバーレイを導入
 - 日時・マシン名・タイムコードなどがすぐ把握でき、CG ソフトとのやり取りや、エラーフレームの除去などで活用
 
-![bg right](assets/photo_overlay.JPG)
+![bg right](assets/photo/photo_overlay.JPG)
 
 ## Nobe Omniscope + NDI でスコープの表示
 
@@ -456,7 +456,7 @@ Mac 環境必須のアプリケーションなどを実行
 - Mac Mini サーバーで運用中のデータベースサーバーを使って、複数人でタイムラインを共有できる。
 - Mac でリモートレンダリングを設定することで、Windows マシンから ProRes でレンダリングできる。
 
-![](assets/screenshot_prores.png)
+![](assets/screenshot/screenshot_prores.png)
 
 # バックアップ体制
 
@@ -497,7 +497,7 @@ RAM: 16GB DDR4 ECC UDIMM
 6x 8TB WD Red
 ```
 
-![bg left:30% 90%](assets/photo_offsite.png)
+![bg left:30% 90%](assets/photo/photo_offsite.png)
 
 ### 2. 終了直後のプロジェクト (ホットアーカイブ)
 
@@ -521,7 +521,7 @@ RAM: 16GB DDR4 ECC UDIMM
 - 2024 年始め、LTO-8 ドライブを導入。Thunderbolt 接続で、Mac Mini サーバーで運用している。
 - [YoYotta](https://yoyotta.com/) を使用してアーカイブ・リトリーブ操作を行い、出力された CSV データを SQL データベースに登録、Web サイトからユーザーごとに参照できるようにしている。
 
-![bg right:30%](assets/photo_tapes.JPG)
+![bg right:30%](assets/photo/photo_tapes.JPG)
 
 ### LTO のコストパフォーマンス
 
@@ -543,7 +543,7 @@ RAM: 16GB DDR4 ECC UDIMM
 - クリーニングカートリッジというのがあり、ドライブでクリーニングのサインが点灯した段階で使用する。
 - 災害などへの対策として、同一のコピーを 2 つ作成、別々の場所で保管する。
 
-![bg right:40%](assets/photo_ltousage.JPG)
+![bg right:40%](assets/photo/photo_ltousage.JPG)
 
 # 今後の展望 (最近興味があること)
 
