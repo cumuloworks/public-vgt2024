@@ -122,7 +122,7 @@ Cumuloworks, Inc.
 
 ## [SHOWREEL 2024](https://cumulo.works/)
 
-<video src="assets\Cumuloworks_SHOWREEL2024_vgt.mp4" controls ></video>
+<video src="assets/video/Cumuloworks_SHOWREEL2024_vgt.mp4" controls ></video>
 
 ## <!-- 最近のWORK -->
 
@@ -210,7 +210,7 @@ Cumuloworks が導入している機材の紹介
 - NAS は 20GbE 帯域を確保
   - 理論上、Internet <-> NAS と、各マシン <-> NAS それぞれで 10Gbps の帯域を確保。
 
-![bg right:45%](assets\diagram_network.png)
+![bg right:45%](assets/diagram/diagram_network.png)
 
 ## メインストレージサーバー ([Synology RS3621xs+](https://www.synology.com/ja-jp/products/RS3621xs+))
 
