@@ -144,6 +144,8 @@ Cumuloworks が導入している機材の紹介
 
 最近興味があること、今後の拡張の計画（妄想）
 
+※順番は少し前後します
+
 </center>
 
 # 機材紹介
@@ -318,40 +320,60 @@ Google Drive の容量無制限が**サ終**
 - [PhotoPrism](https://www.photoprism.app/)のサーバーとして運用。
   - ミラーレスカメラで撮影 → FTP で 直接 NAS にアップロード → PhotoPrism で管理
 
-## オフサイトバックアップサーバー ([Synology DS1618+](https://www.synology.com/ja-jp/products/DS1621+))
-
-- メインサーバー導入前に使用していた 6 ベイ NAS を流用。
-- アクティブなプロジェクトやその他クリティカルなアセットをメインサーバーとリアルタイム同期
-- メインサーバーが使えない状況でも最低限のデータにアクセスできるようにしている
-
 ## Mac Mini サーバー ([M2 Mac Mini](https://www.apple.com/jp/mac-mini/))
 
-- 10GbE オプションの M2 Mac Mini を 2 台ラックマウントで導入。
-- 2 台を異なる用途で運用。
+10GbE オプションの M2 Mac Mini を 2 台導入。
+
+ラックマウント化し、ディスプレイなしで運用(Parsec でリモートアクセス)。
+
+#### 導入のきっかけ
+
+- Mac 環境はやっぱり手元に欲しい
+  - たまに送られてくる Mac フォーマット(HFS+)の HDD への対応
+  - ソフトウェアの動作検証がしたい
+  - 常時起動のサーバーとして運用してみたい
+- Mac Mini だけコストパフォーマンスが異常
+  - 当時 10 万円を切っていた
 
 ![bg left:40%](assets/photo_macmini.JPG)
 
-#### Mac Mini 1 台目
+### Mac Mini 1 台目
 
-安定動作が期待されるサーバー機能を集約
+安定動作が期待される**サーバー機能**を集約
 
-- Docker コンテナで運用している社内ツールを運用
-- [Kollaborate](https://www.kollaborate.tv/) のサーバー
+- Docker コンテナの運用
+  - [Kollaborate](https://www.kollaborate.tv/) のサーバー
 - [OpenVPN](https://openvpn.net/) サーバー(運用休止中)
-- DaVinci Resolve のデータベースサーバー
+- [DaVinci Resolve](https://www.blackmagicdesign.com/jp/products/davinciresolve/) の **データベースサーバー**
+- [Team Render](https://www.maxon.net/ja/cinema-4d/features/network-rendering) の **サーバー**
 
-#### Mac Mini 2 台目
+![bg brightness:50%](assets/screenshot_mac1.png)
+
+### Mac Mini 2 台目
 
 Mac 環境必須のアプリケーションなどを実行
 
 - Mac 環境でのツールなどの検証
 - Thunderbolt 接続された LTO ドライブへのアクセス
-- DaVinci Resolve でのリモートレンダリング
+- DaVinci Resolve でのリモート ProRes レンダリング
+
+![bg brightness:50%](assets/screenshot_mac2.png)
+
+## リモートデスクトップ環境 ([Parsec](https://parsec.app/))
+
+- リモートデスクトップで、運用しているマシンにアクセス可能。
+- ラックマウントの Mac へもリモートアクセスで、KVM 的に使う。
+- 遅延が小さく、広色域・固定フレームレートにも対応していて、映像作業にも使える。
+- [Chrome Remote Desktop](https://remotedesktop.google.com/) も併用して二重化している。
+
+![bg right:40% h:90%](assets/screenshot_parsec.png)
+
+# ワークフロー紹介
 
 ## メインマシン
 
-- 2024 年始めに導入したメインマシン。After Effects や DaVinci Resolve での作業がストレスなく行えるように、メモリを 384GB に。
-- Cinema 4D などでのシミュレーション作業も高速で行えるように Ryzen Threadripper にした。現状 VRAM が 24GB で足りないので、将来的に換装予定。
+- 2024 年始めに導入した Threadripper マシン。編集作業がストレスなく行えるように、メモリを 384GB に。
+- 現状 VRAM が 24GB で足りないので、将来的に換装予定。
 
   ```
   CPU: AMD Ryzen Threadripper 7980X
@@ -369,8 +391,9 @@ Mac 環境必須のアプリケーションなどを実行
 
 ## レンダリングマシン
 
-- 2024 年まで使っていた水冷マシンを小型化したもの。
+- 以前まで使っていた水冷のメインマシンを小型化したもの。
 - 電力的なコストパフォーマンスは悪いが、まだまだ現役。
+- 見た目がかなり気に入っている、史上最高傑作。
 
   ```
   CPU: AMD Ryzen 9 5950X
@@ -382,20 +405,11 @@ Mac 環境必須のアプリケーションなどを実行
   CHA: Jonsbo TK-1 White
   CHA_FAN: 2x Noctua NF-F12 industrialPPC-3000 PWM
   CHA_FAN: 2x Noctua NF-A12X15
+  WATER COOLING: EKWB
   ```
 
-  ![bg left:40%](assets/photo_rendermachine.JPG)
-
-## リモートデスクトップ環境 ([Parsec](https://parsec.app/))
-
-- リモートデスクトップで、運用しているマシンにアクセス可能。
-- ラックマウントの Mac へもリモートアクセスで、KVM 的に使う。
-- 遅延が小さく、広色域・固定フレームレートにも対応していて、映像作業にも使える。
-- [Chrome Remote Desktop](https://remotedesktop.google.com/) も併用して二重化している。
-
-![bg right:40% h:90%](assets/screenshot_parsec.png)
-
-# ワークフロー紹介
+  ![bg vertical left:40%](assets/photo_rendermachine1.JPG)
+  ![bg vertical left:40%](assets/photo_rendermachine2.JPG)
 
 ## 進行管理・コミュニケーション
 
@@ -444,12 +458,20 @@ Mac 環境必須のアプリケーションなどを実行
 
 ![](assets/screenshot_prores.png)
 
-# プロジェクトのアーカイブ
+# バックアップ体制
 
 ## ホットアーカイブ
 
 - 直近のプロジェクトは容量が許す限りメインサーバーで保存。
 - 完パケの動画ファイルのみ Kampakes フォルダに保存し、後述の LTO からリトリーブする必要が無いようにしている。
+
+## オフサイトバックアップサーバー ([Synology DS1618+](https://www.synology.com/ja-jp/products/DS1621+))
+
+- メインサーバー導入前に使用していた 6 ベイ NAS を流用。
+- アクティブなプロジェクトなど、重要なデータをメインサーバーとリアルタイム同期。
+- メインサーバーが使えない状況でも最低限のデータにアクセスできるようにしている。
+
+![bg left:30% 90%](assets/photo_offsite.png)
 
 ## コールドアーカイブ
 
