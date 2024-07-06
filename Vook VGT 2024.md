@@ -559,3 +559,11 @@ RAM: 16GB DDR4 ECC UDIMM
 ## git でのバージョン管理
 
 複数人で作業するとき、データをバージョン管理できないか（特に AEP など）
+
+# ありがとうございました
+
+## ご質問などがあればお気軽にどうぞ
+
+![w:360 h:360 bg right:40%](assets/qr/qr_x.png)
+
+本講演の資料は [Github で公開しています](https://github.com/cumuloworks/public-vgt2024)
