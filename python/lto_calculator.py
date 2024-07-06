@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Parameters
-initial_data_tb = 200
+initial_data_tb = 150
 annual_increase_tb = 40
 years = 10
 tape_capacity_tb = 20
