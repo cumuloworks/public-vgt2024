@@ -119,11 +119,11 @@ Motion Designer, CG Generalist
 
 ### 合同会社キュムロワークス
 
-Cumuloworks, Inc.
-2021 年 9 月設立 (もうすぐ 4 期目)
+**Cumuloworks, Inc.**
 
+- 2021 年 9 月設立 (もうすぐ 4 期目)
 - 広告・エンタメの CG 映像制作がメイン
-- 6 月からは[@shigu](https://twitter.com/shgumo)との 2 名体制
+- 6 月からは[@shgumo](https://twitter.com/shgumo)との 2 名体制
 - [SHOWREEL 2024](https://cumulo.works/)
 
 ![bg right:40%](assets/photo/photo_office.JPG)
@@ -139,7 +139,7 @@ Cumuloworks, Inc.
 ## 本日の内容
 
 1. 機材紹介
-  Cumuloworks が導入している機材の紹介
+  Cumuloworks,Inc. で導入している機材の紹介
 
 2. ワークフロー紹介
    機材をどのように制作に活かしているか
@@ -149,14 +149,14 @@ Cumuloworks, Inc.
 
 `※順番は少し前後します`
 
-## 機材紹介
+## 機材
 
 ### ラック ([StarTech 4POSTRACK8U](https://www.startech.com/ja-jp/server-management/4postrack8u))
 
 2023 年に導入したラック。
 
 - 奥行きを調整できるタイプで、高さは 8U。
-- デスク周りに機材が散らばらず、コンパクトに収まる。
+- ⭕️ デスク周りに機材が散らばらず、コンパクトに収まる。
 - ⭕ 見た目がクール ❌️ あらゆる付属品の価格が高い
 
   ![bg brightness:50%](assets/photo/photo_rack2.jpg)
@@ -174,9 +174,11 @@ Cumuloworks, Inc.
 **NTT 光クロス(10Gbps)** を引き込んでおり、スイッチを介して分配される。
 
 - ⭕️ NTT のレンタルルーター([XG-100NE](https://web116.jp/shop/hikari_r/xg_100ne/xg_100ne_00.html))よりも高い安定性。
-- 高スループットの回線を契約することにより、データのやり取りでストレスが減った。
+- **高スループットの回線**を契約することにより、データのやり取りでストレスが減った。
 - インターネットに直に接する機材 → セキュリティ面で重要な役割。
 - Mac アドレスを基に、主要な LAN 内デバイスの IP アドレスをルーター側で固定。
+
+![bg right:30%](assets/photo/photo_router.JPG)
 
 ### メインスイッチ ([NETGEAR XS508M](https://www.netgear.com/jp/business/wired/switches/unmanaged/xs508m))
 
@@ -186,9 +188,10 @@ Cumuloworks, Inc.
 - ここから各作業用マシン・サーバーなどへネットワークが分配される。
 - 8 ポートで足りず、買い替えを検討中。
 s
-<br>
 
 ![w:720px](assets/web/web_xs508m.jpg)
+
+![bg right:30%](assets/photo/photo_router.JPG)
 
 ### UPS ([OMRON BN75R](https://socialsolution.omron.com/jp/ja/products_service/ups/product/bn75-300r/bn75-300r.html))
 
@@ -200,7 +203,7 @@ s
   - 電力逼迫で、電圧低下や周波数不安定化が起こることは今後もありそう。
 - ⭕️ 前面の液晶ディスプレイで、電力消費量やバッテリー残量などが確認できて便利。
 
-![bg brightness:30%](assets/photo/photo_ups.JPG)
+![bg brightness:50%](assets/photo/photo_ups.JPG)
 
 ### ネットワーク構成
 
@@ -366,11 +369,10 @@ Mac 環境必須のアプリケーションなどを実行
 
 ![bg right:40% h:90%](assets/screenshot/screenshot_parsec.png)
 
-## ワークフロー紹介
-
 ### メインマシン
 
-- 2024 年始めに導入した Threadripper マシン。編集作業がストレスなく行えるように、メモリを 384GB に。
+- 2024 年始めに導入した Threadripper マシン。
+  - AEでの編集作業がストレスなく行えるように、メモリを 384GB に。
 - 現状 VRAM が 24GB で足りないので、将来的に換装予定。
 
   ```plaintext
@@ -409,44 +411,66 @@ Mac 環境必須のアプリケーションなどを実行
   ![bg vertical left:40%](assets/photo/photo_rendermachine1.JPG)
   ![bg vertical left:40%](assets/photo/photo_rendermachine2.JPG)
 
-### 進行管理・コミュニケーション
+## ワークフロー
+
+### 進行管理・コミュニケーションツール
 
 - 社内では基本的に [Notion](https://www.notion.so/), [Discord](https://discord.com/) に集約。
-- プロジェクトに合わせて柔軟に対応
+- Discordは、チャンネルごとに細かい権限設定が出来て、複数プロジェクトが同時に動くような状況でも使いやすい。
+- その他、プロジェクトに合わせて柔軟に対応
 
 ### ファイルの命名規則・整理のルールなど
 
-- GitHub で、社内での命名規則のルールを明確化
-- 公開中なので、参考にしてほしい
+- すべてのプロジェクトでファイルの命名規則を統一。
+- 最近、ルールを明文化した。[Githubで公開中](https://github.com/cumuloworks/public-docs/blob/main/cumuloworks-naming-standard.md)
 
-### レンダリングワークフロー
+![bg right:45%](image.png)
 
-- WIP
+### カラーマネジメント
+
+- ハードウェアキャリブレーション可能なモニターを導入。
+- 最近では、ACESへの統一を進めている。
+- After Effectsの新しいOCIO機能も活用している。
+- ワークフローの明文化を進めている。
+
+![bg right:40%](assets/photo/photo_overlay.JPG)
 
 ### After Effects でタイムコードのオーバーレイの作成
 
-- プレビズやオフラインデータを起点として制作する場合、各ショット・フレームを正確に把握するために独自のオーバーレイを導入
+- 各ショット・フレームを正確に把握するために独自のオーバーレイを導入
 - 日時・マシン名・タイムコードなどがすぐ把握でき、CG ソフトとのやり取りや、エラーフレームの除去などで活用
+- プレビズやオフラインデータを起点として制作する場合、特に有用。
+- 16:9の上下に余白を作る形で挿入している。
 
-![bg right](assets/photo/photo_overlay.JPG)
+![bg right:40%](assets/photo/photo_overlay.JPG)
 
-### Nobe Omniscope + NDI でスコープの表示
+### <!-- 図拡大 -->
+
+![bg 82.5%](assets/screenshot/screenshot_overlay.png)
 
 ### スプレッドシートでカットの情報を一元管理する
 
 - オーバーレイと同時に、スプレッドシートで各ショットの進捗状況を把握
 - 複数人で作業する際に効果を発揮（レンダリング作業の分担など）
 
-### GPU レンダリング
+![shotlist](assets/screenshot/screenshot_shotlist.png)
+
+### CG レンダリング
+
+#### GPU (Octane Render)
 
 - 殆ど全てのプロジェクトで Octane Renderer を使用。
-- 基本的には RNDR ネットワークを使用したクラウドレンダリング
+- 基本的には RNDR を使用したクラウドレンダリング
 - プレビューや、短時間のレンダリングは、ローカルのネットワークレンダリングで行う
 - Octane Render の Render Node をつなげることで、それぞれのマシンの GPU を利用可能。簡単にスケールできる
 
-### CPU レンダリング
+#### CPU (Cinema 4D Standard など)
 
 - Octane Render 以外でのレンダリングは、Cinema 4D の Team Render を使用
+
+### RNDR
+
+![rndr 50%](assets/screenshot/screenshot_rndr.png)
 
 ### 編集・納品
 
