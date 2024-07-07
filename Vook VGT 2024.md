@@ -33,7 +33,17 @@ style: |
   }
   h1 {
     text-align: center;
-    font-size: 64px;
+    font-size: 72px;
+  }
+  h2 {
+    text-align: center;
+    font-size: 60px;
+  }
+  h3 {
+    font-size: 36px;
+  }
+  h4 {
+    font-size: 30px;
   }
   p {
     font-size: 24px;
@@ -41,7 +51,7 @@ style: |
   blockquote {
     color: #ffffff;
     margin-top: 30px;
-    font-size: 24px;
+    font-size: 18px;
   }
   a {
     color: #ffffff;
@@ -62,14 +72,13 @@ style: |
     margin: 0 auto;
   }
   th, td {
-    font-size: 18px;
+    font-size: 24px;
     background-color: #1d3744;
     border-radius: 0;
   }
   video {
     display: block;
     margin: 0 auto;
-    margin-top: 30px;
     background-color: transparent;
     border-radius: 18px;
     width: 80%;
@@ -86,11 +95,11 @@ paginate: false
 
 ![bg brightness:50%](assets/photo/photo_rack1.jpg)
 
-<img src="assets/logo/logo_cumuloworks.png" height="96" style="transform: translateY(0%);">
+<img src="assets/logo/logo_cumuloworks.png" height="96" style="transform: translateY(0%);" alt="Cumuloworks">
 
-# 自己紹介
+## 自己紹介
 
-## Tomoya Eguchi (Cumuloworks)
+### Tomoya Eguchi (Cumuloworks)
 
 **Freelance Director**
 Motion Designer, CG Generalist
@@ -108,49 +117,41 @@ Motion Designer, CG Generalist
 
 ![w:360 h:360 bg right:40%](assets/qr/qr_x.png)
 
-## 合同会社キュムロワークス
+### 合同会社キュムロワークス
 
 Cumuloworks, Inc.
 2021 年 9 月設立 (もうすぐ 4 期目)
 
-> 広告・エンタメの CG 映像制作がメイン
-> 6 月からは[@shigu](https://twitter.com/shgumo)との 2 名体制
-
-> [SHOWREEL 2024](https://cumulo.works/)
+- 広告・エンタメの CG 映像制作がメイン
+- 6 月からは[@shigu](https://twitter.com/shgumo)との 2 名体制
+- [SHOWREEL 2024](https://cumulo.works/)
 
 ![bg right:40%](assets/photo/photo_office.JPG)
 
-## [SHOWREEL 2024](https://cumulo.works/)
+### [SHOWREEL 2024](https://cumulo.works/)
 
 <video src="assets/video/Cumuloworks_SHOWREEL2024_vgt.mp4" controls ></video>
 
-## <!-- 最近のWORK -->
+### <!-- 最近のWORK -->
 
 ![bg](assets/work/work_4view.jpg)
 
-# 本日の内容
+## 本日の内容
 
-<center>
+1. 機材紹介
+  Cumuloworks が導入している機材の紹介
 
-#### 1. 機材紹介
+2. ワークフロー紹介
+   機材をどのように制作に活かしているか
 
-Cumuloworks が導入している機材の紹介
+3. 今後の展望
+   最近興味があること、今後の拡張の計画（妄想）
 
-#### 2. ワークフロー紹介
+`※順番は少し前後します`
 
-機材をどのように制作に活かしているか
+## 機材紹介
 
-#### 3. 今後の展望
-
-最近興味があること、今後の拡張の計画（妄想）
-
-※順番は少し前後します
-
-</center>
-
-# 機材紹介
-
-## ラック ([StarTech 4POSTRACK8U](https://www.startech.com/ja-jp/server-management/4postrack8u))
+### ラック ([StarTech 4POSTRACK8U](https://www.startech.com/ja-jp/server-management/4postrack8u))
 
 2023 年に導入したラック。
 
@@ -160,7 +161,7 @@ Cumuloworks が導入している機材の紹介
 
   ![bg brightness:50%](assets/photo/photo_rack2.jpg)
 
-## ラック構成
+### ラック構成
 
 <center>
 
@@ -168,7 +169,7 @@ Cumuloworks が導入している機材の紹介
 
 </center>
 
-## メインルーター ([YAMAHA RTX1300](https://network.yamaha.com/products/routers/rtx1300/))
+### メインルーター ([YAMAHA RTX1300](https://network.yamaha.com/products/routers/rtx1300/))
 
 **NTT 光クロス(10Gbps)** を引き込んでおり、スイッチを介して分配される。
 
@@ -177,19 +178,19 @@ Cumuloworks が導入している機材の紹介
 - インターネットに直に接する機材 → セキュリティ面で重要な役割。
 - Mac アドレスを基に、主要な LAN 内デバイスの IP アドレスをルーター側で固定。
 
-## メインスイッチ ([NETGEAR XS508M](https://www.netgear.com/jp/business/wired/switches/unmanaged/xs508m))
+### メインスイッチ ([NETGEAR XS508M](https://www.netgear.com/jp/business/wired/switches/unmanaged/xs508m))
 
 8 ポートのシンプルな **オール 10GbE** スイッチ。
 
 - 排熱も良好で、本格的に 10GbE 化を始めたい方にはおすすめ。
 - ここから各作業用マシン・サーバーなどへネットワークが分配される。
 - 8 ポートで足りず、買い替えを検討中。
-
+s
 <br>
 
 ![w:720px](assets/web/web_xs508m.jpg)
 
-## UPS ([OMRON BN75R](https://socialsolution.omron.com/jp/ja/products_service/ups/product/bn75-300r/bn75-300r.html))
+### UPS ([OMRON BN75R](https://socialsolution.omron.com/jp/ja/products_service/ups/product/bn75-300r/bn75-300r.html))
 
 ラック全体の電源をバックアップする、最大 680W 対応の UPS。
 
@@ -201,7 +202,7 @@ Cumuloworks が導入している機材の紹介
 
 ![bg brightness:30%](assets/photo/photo_ups.JPG)
 
-## ネットワーク構成
+### ネットワーク構成
 
 #### ポイント
 
@@ -212,12 +213,12 @@ Cumuloworks が導入している機材の紹介
 
 ![bg right:45%](assets/diagram/diagram_network.png)
 
-## メインストレージサーバー ([Synology RS3621xs+](https://www.synology.com/ja-jp/products/RS3621xs+))
+### メインストレージサーバー ([Synology RS3621xs+](https://www.synology.com/ja-jp/products/RS3621xs+))
 
 2023 年導入の **200TB**のメインサーバー。
 **ストレージ以外の機能**も集約。
 
-```
+```plaintext
 Intel® Xeon® D-1541 8-core 2.1 GHz
 RAM: 32GB DDR4 ECC RDIMM (2x 16GB)
 
@@ -287,8 +288,6 @@ Google Drive の容量無制限が**サ終**
 - オンプレミスの Dropbox のような感じ
 - ユーザーとファイルの組み合わせで、細かく権限を設定可能。
 
-  <hr>
-
 #### 使用例
 
 - 社内で制作したモデルデータをリアルタイムで受け渡し
@@ -312,15 +311,14 @@ Google Drive の容量無制限が**サ終**
 1. Docker コンテナの運用 ([Container Manager](https://www.synology.com/dsm/feature/container-manager))
 2. Windows や Linux のバーチャルマシンの運用 ([Virtual Machine Manager](https://www.synology.com/dsm/feature/virtual_machine_manager))
 
-#### 使用例
+- 使用例2
 
 - Windows で時間がかかる処理を、NAS のバーチャルマシンで行う。
 - 社内ツールの Web サーバー・SQL サーバーとしての利用。
-
 - [PhotoPrism](https://www.photoprism.app/)のサーバーとして運用。
   - ミラーレスカメラで撮影 → FTP で 直接 NAS にアップロード → PhotoPrism で管理
 
-## Mac Mini サーバー ([M2 Mac Mini](https://www.apple.com/jp/mac-mini/))
+### Mac Mini サーバー ([M2 Mac Mini](https://www.apple.com/jp/mac-mini/))
 
 10GbE オプションの M2 Mac Mini を 2 台導入。
 
@@ -359,7 +357,7 @@ Mac 環境必須のアプリケーションなどを実行
 
 ![bg brightness:50%](assets/screenshot/screenshot_mac2.png)
 
-## リモートデスクトップ環境 ([Parsec](https://parsec.app/))
+### リモートデスクトップ環境 ([Parsec](https://parsec.app/))
 
 - リモートデスクトップで、運用しているマシンにアクセス可能。
 - ラックマウントの Mac へもリモートアクセスで、KVM 的に使う。
@@ -368,14 +366,14 @@ Mac 環境必須のアプリケーションなどを実行
 
 ![bg right:40% h:90%](assets/screenshot/screenshot_parsec.png)
 
-# ワークフロー紹介
+## ワークフロー紹介
 
-## メインマシン
+### メインマシン
 
 - 2024 年始めに導入した Threadripper マシン。編集作業がストレスなく行えるように、メモリを 384GB に。
 - 現状 VRAM が 24GB で足りないので、将来的に換装予定。
 
-  ```
+  ```plaintext
   CPU: AMD Ryzen Threadripper 7980X
   M/B: ASUS Pro WS TRX50-SAGE WIFI
   GPU: MSI GeForce RTX 4090 SUPRIM LIQUID X
@@ -389,13 +387,13 @@ Mac 環境必須のアプリケーションなどを実行
 
   ![bg right:40%](assets/photo/photo_mainmachine.JPG)
 
-## レンダリングマシン
+### レンダリングマシン
 
 - 以前まで使っていた水冷のメインマシンを小型化したもの。
 - 電力的なコストパフォーマンスは悪いが、まだまだ現役。
 - 見た目がかなり気に入っている、史上最高傑作。
 
-  ```
+  ```plaintext
   CPU: AMD Ryzen 9 5950X
   M/B: MSI Prestige X570 Creation
   GPU: 2x Zotac GeForce RTX 3090 Trinity
@@ -411,56 +409,56 @@ Mac 環境必須のアプリケーションなどを実行
   ![bg vertical left:40%](assets/photo/photo_rendermachine1.JPG)
   ![bg vertical left:40%](assets/photo/photo_rendermachine2.JPG)
 
-## 進行管理・コミュニケーション
+### 進行管理・コミュニケーション
 
 - 社内では基本的に [Notion](https://www.notion.so/), [Discord](https://discord.com/) に集約。
 - プロジェクトに合わせて柔軟に対応
 
-## ファイルの命名規則・整理のルールなど
+### ファイルの命名規則・整理のルールなど
 
 - GitHub で、社内での命名規則のルールを明確化
 - 公開中なので、参考にしてほしい
 
-## レンダリングワークフロー
+### レンダリングワークフロー
 
 - WIP
 
-## After Effects でタイムコードのオーバーレイの作成
+### After Effects でタイムコードのオーバーレイの作成
 
 - プレビズやオフラインデータを起点として制作する場合、各ショット・フレームを正確に把握するために独自のオーバーレイを導入
 - 日時・マシン名・タイムコードなどがすぐ把握でき、CG ソフトとのやり取りや、エラーフレームの除去などで活用
 
 ![bg right](assets/photo/photo_overlay.JPG)
 
-## Nobe Omniscope + NDI でスコープの表示
+### Nobe Omniscope + NDI でスコープの表示
 
-## スプレッドシートでカットの情報を一元管理する
+### スプレッドシートでカットの情報を一元管理する
 
 - オーバーレイと同時に、スプレッドシートで各ショットの進捗状況を把握
 - 複数人で作業する際に効果を発揮（レンダリング作業の分担など）
 
-## GPU レンダリング
+### GPU レンダリング
 
 - 殆ど全てのプロジェクトで Octane Renderer を使用。
 - 基本的には RNDR ネットワークを使用したクラウドレンダリング
 - プレビューや、短時間のレンダリングは、ローカルのネットワークレンダリングで行う
 - Octane Render の Render Node をつなげることで、それぞれのマシンの GPU を利用可能。簡単にスケールできる
 
-## CPU レンダリング
+### CPU レンダリング
 
 - Octane Render 以外でのレンダリングは、Cinema 4D の Team Render を使用
 
-## 編集・納品
+### 編集・納品
 
 - 編集は主に DaVinci Resolve を使用。
 - Mac Mini サーバーで運用中のデータベースサーバーを使って、複数人でタイムラインを共有できる。
 - Mac でリモートレンダリングを設定することで、Windows マシンから ProRes でレンダリングできる。
 
-![](assets/screenshot/screenshot_prores.png)
+![h:300](assets/screenshot/screenshot_prores.png)
 
-# バックアップ体制
+## バックアップ体制
 
-## バックアップの考え方
+### バックアップの考え方
 
 データの削除は行わず、永続的に保存することを基本方針としている。
 
@@ -476,7 +474,7 @@ Mac 環境必須のアプリケーションなどを実行
 - メインサーバーの障害時に備え、オフサイトサーバーにリアルタイムでバックアップを取る。
 - プロジェクトが長期化する場合は、定期的に LTO-8 テープにバックアップを取る。
 
-```
+```plaintext
 参考: 3-2-1 ルール
 
 - 3 つのコピー (e.g. メインサーバー + オフサイトサーバー + LTO-8 テープ)
@@ -490,7 +488,7 @@ Mac 環境必須のアプリケーションなどを実行
 - 進行中のプロジェクトなど、重要なデータをメインサーバーとリアルタイム同期。
 - メインサーバーが使えない状況でも最低限のデータにアクセスできるようにしている。
 
-```
+```plaintext
 Intel Atom C3538 4-core 2.1 GHz
 RAM: 16GB DDR4 ECC UDIMM
 
@@ -545,24 +543,24 @@ RAM: 16GB DDR4 ECC UDIMM
 
 ![bg right:40%](assets/photo/photo_ltousage.JPG)
 
-# 今後の展望 (最近興味があること)
+### 今後の展望 (最近興味があること)
 
-## アプリケーション開発 (Python, Node.js)
+### アプリケーション開発 (Python, Node.js)
 
 - 開発中のアプリケーション（Seequer）のデモ
 
-## カットごとにリアルタイムで進捗状況をトラッキングすること
+### カットごとにリアルタイムで進捗状況をトラッキングすること
 
 カットリストの作成
 フライトストリップでの管理など
 
-## git でのバージョン管理
+### git でのバージョン管理
 
 複数人で作業するとき、データをバージョン管理できないか（特に AEP など）
 
-# ありがとうございました
+## ありがとうございました
 
-## ご質問などがあればお気軽にどうぞ
+### ご質問などがあればお気軽にどうぞ
 
 ![w:360 h:360 bg right:40%](assets/qr/qr_x.png)
 

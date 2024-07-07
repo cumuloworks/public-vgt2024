@@ -32,5 +32,16 @@
         "Ultrastar",
         "Yotta",
         "Zotac"
-    ]
+    ],
+    "markdownlint.config": {
+        "MD033": {
+            "allowed_elements": [
+                "img",
+                "center",
+                "video",
+                "hr",
+                "br"
+            ]
+        },
+    }
 }
