@@ -1,6 +1,5 @@
 ---
 marp: true
-backgroundColor: #1d3744;
 color: #ffffff;
 footer: "VGT 2024 | © 2024 Cumuloworks, Inc."
 style: |
@@ -9,6 +8,7 @@ style: |
   section {
     font-family: 'Inter', 'M PLUS 2',  sans-serif;
     border-radius: 18px;
+    background: linear-gradient(to bottom right, #1d3744, #011627);
   }
   footer {
     font-family: 'Inter', sans-serif;
@@ -22,7 +22,7 @@ style: |
     font-size: 18px;
   }
   marp-pre {
-    background-color: #1d3744;
+    background: linear-gradient(to bottom right, #1d3744, #011627);
     border: 2px solid #ffffff;
     color: #ffffff;
     font-family: 'IBM Plex Mono', monospace;
