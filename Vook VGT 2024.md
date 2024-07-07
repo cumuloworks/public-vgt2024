@@ -424,7 +424,7 @@ Mac 環境必須のアプリケーションなどを実行
 - すべてのプロジェクトでファイルの命名規則を統一。
 - 最近、ルールを明文化した。[Githubで公開中](https://github.com/cumuloworks/public-docs/blob/main/cumuloworks-naming-standard.md)
 
-![bg right:45%](image.png)
+![bg right:45%](assets/screenshot/screenshot_namingrules.png)
 
 ### カラーマネジメント
 
@@ -459,18 +459,16 @@ Mac 環境必須のアプリケーションなどを実行
 
 #### GPU (Octane Render)
 
-- 殆ど全てのプロジェクトで Octane Renderer を使用。
-- 基本的には RNDR を使用したクラウドレンダリング
-- プレビューや、短時間のレンダリングは、ローカルのネットワークレンダリングで行う
-- Octane Render の Render Node をつなげることで、それぞれのマシンの GPU を利用可能。簡単にスケールできる
+- ほぼ全てのプロジェクトで Octane Renderer を使用。
+- 基本的には [RNDR](https://rndr.otoy.com/) を使用したクラウドレンダリング。
+- プレビューや、短時間のレンダリングはRender Nodeを使用。
+- それぞれのマシンの GPU をネットワーク経由で利用可能。簡単にスケールできる。
 
 #### CPU (Cinema 4D Standard など)
 
-- Octane Render 以外でのレンダリングは、Cinema 4D の Team Render を使用
+- Cinema 4D の Team Render を使用することも。
 
-### RNDR
-
-![rndr 50%](assets/screenshot/screenshot_rndr.png)
+![bg right:40% 90%](assets/screenshot/screenshot_rendernode.png)
 
 ### 編集・納品
 
@@ -519,7 +517,7 @@ RAM: 16GB DDR4 ECC UDIMM
 6x 8TB WD Red
 ```
 
-![bg left:30% 90%](assets/photo/photo_offsite.png)
+![bg left:30%](assets/photo/photo_offsite.png)
 
 ### 2. 終了直後のプロジェクト (ホットアーカイブ)
 
@@ -531,6 +529,14 @@ RAM: 16GB DDR4 ECC UDIMM
 
 - 終了して一定期間が経過したプロジェクトは、メインサーバーから削除。
 - LTO-8 テープのコピーを 2 つ作り、別々の場所に保管する。
+
+### バックアップ体制のまとめ
+
+進行中|終了直後|終了後
+---|---|---
+メインサーバー|メインサーバー|LTO-8 テープ
+オフサイトサーバー|LTO-8 テープ|-
+LTO-8 テープ(長期プロジェクト)|-|-
 
 ### LTO について
 
@@ -545,18 +551,6 @@ RAM: 16GB DDR4 ECC UDIMM
 
 ![bg right:30%](assets/photo/photo_tapes.JPG)
 
-### LTO のコストパフォーマンス
-
-- LTO は、ドライブが非常に高価だが、テープは安価。
-- 一度導入してしまえば、以降テープの購入費用だけで済み、長期的に高いコストパフォーマンス。
-- Amazon の Glacier などのクラウドストレージでは、保存しているデータ量のみならず、データのアップロード・ダウンロードにコストがかかる。
-
-> [計算 by ChatGPT (python)](python/lto_calculator.py)
-> 150TB + 毎年 40TB 増加
-> 10 年間保存
-
-![bg right:50% 90%](python/plot.png)
-
 ### LTO の使用方法・メンテナンスなど
 
 - LTO の保存条件は、温度・湿度・磁気の影響を受けやすいため、適切な環境で保管する必要がある。
@@ -567,7 +561,17 @@ RAM: 16GB DDR4 ECC UDIMM
 
 ![bg right:40%](assets/photo/photo_ltousage.JPG)
 
-### 今後の展望 (最近興味があること)
+### LTO のコストパフォーマンス
+
+- LTO は、ドライブが非常に高価だが、テープは安価。
+- 一度導入してしまえば、以降テープの購入費用だけで済み、長期的に高いコストパフォーマンス。
+- Amazon の Glacier などのクラウドストレージでは、保存しているデータ量のみならず、データのアップロード・ダウンロードにコストがかかる。
+- [計算 by ChatGPT (python)](python/lto_calculator.py)
+  `150TB + 毎年 40TB 増加 + 10 年間保存`
+
+![bg right:50% 90%](python/plot.png)
+
+## 今後の展望 (最近興味があること)
 
 ### アプリケーション開発 (Python, Node.js)
 
@@ -575,17 +579,28 @@ RAM: 16GB DDR4 ECC UDIMM
 
 ### カットごとにリアルタイムで進捗状況をトラッキングすること
 
-カットリストの作成
-フライトストリップでの管理など
+- フライトストリップでの管理？
+- 専用のアプリケーション開発？
 
 ### git でのバージョン管理
 
-複数人で作業するとき、データをバージョン管理できないか（特に AEP など）
+- 複数人で作業するとき、データをバージョン管理できないか（特に AEP など）？
+- 複数のAEP、複数のコンポジションなどを複数人で作業した後にマージする方法はないか？
+
+### 興味がある方、是非ご連絡ください
+
+アイデア交換や共同開発など...勉強させてください
 
 ## ありがとうございました
+
+<center>
+Thank you very much for listening!
+</center>
 
 ### ご質問などがあればお気軽にどうぞ
 
 ![w:360 h:360 bg right:40%](assets/qr/qr_x.png)
 
 本講演の資料は [Github で公開しています](https://github.com/cumuloworks/public-vgt2024)
+
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/cumuloworks)
