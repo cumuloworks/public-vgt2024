@@ -102,9 +102,7 @@ paginate: false
 ### Tomoya Eguchi (Cumuloworks)
 
 **Freelance Director**
-
 Motion Designer, CG Generalist
-
 最近ちょっと Developer
 
 <hr>
