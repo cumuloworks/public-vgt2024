@@ -102,7 +102,9 @@ paginate: false
 ### Tomoya Eguchi (Cumuloworks)
 
 **Freelance Director**
+
 Motion Designer, CG Generalist
+
 最近ちょっと Developer
 
 <hr>
@@ -122,11 +124,11 @@ Motion Designer, CG Generalist
 **Cumuloworks, Inc.**
 
 - 2021 年 9 月設立 (もうすぐ 4 期目)
-- 広告・エンタメの CG 映像制作がメイン
+- 広告・エンタメの CG 映像制作がメインf
 - 6 月からは[@shgumo](https://twitter.com/shgumo)との 2 名体制
 - [SHOWREEL 2024](https://cumulo.works/)
 
-![bg right:40%](assets/photo/photo_office.JPG)
+![bg right:40%](assets/photo/photo_office.jpg)
 
 ### [SHOWREEL 2024](https://cumulo.works/)
 
@@ -165,7 +167,7 @@ Motion Designer, CG Generalist
 
 <center>
 
-![h:512](assets/diagram/diagram_rack.JPG)
+![h:512](assets/diagram/diagram_rack.jpg)
 
 </center>
 
@@ -178,7 +180,7 @@ Motion Designer, CG Generalist
 - インターネットに直に接する機材 → セキュリティ面で重要な役割。
 - Mac アドレスを基に、主要な LAN 内デバイスの IP アドレスをルーター側で固定。
 
-![bg right:30%](assets/photo/photo_router.JPG)
+![bg right:30%](assets/photo/photo_router.jpg)
 
 ### メインスイッチ ([NETGEAR XS508M](https://www.netgear.com/jp/business/wired/switches/unmanaged/xs508m))
 
@@ -191,7 +193,7 @@ s
 
 ![w:720px](assets/web/web_xs508m.jpg)
 
-![bg right:30%](assets/photo/photo_router.JPG)
+![bg right:30%](assets/photo/photo_router.jpg)
 
 ### UPS ([OMRON BN75R](https://socialsolution.omron.com/jp/ja/products_service/ups/product/bn75-300r/bn75-300r.html))
 
@@ -203,7 +205,7 @@ s
   - 電力逼迫で、電圧低下や周波数不安定化が起こることは今後もありそう。
 - ⭕️ 前面の液晶ディスプレイで、電力消費量やバッテリー残量などが確認できて便利。
 
-![bg brightness:50%](assets/photo/photo_ups.JPG)
+![bg brightness:50%](assets/photo/photo_ups.jpg)
 
 ### ネットワーク構成
 
@@ -232,7 +234,7 @@ RAM: 32GB DDR4 ECC RDIMM (2x 16GB)
 SHR-2 (RAID 6) ... 2 ディスク障害耐性
 ```
 
-![bg right:40% 125%](assets/photo/photo_mainserver.JPG)
+![bg right:40% 125%](assets/photo/photo_mainserver.jpg)
 
 ### 0. 導入のきっかけ
 
@@ -336,7 +338,7 @@ Google Drive の容量無制限が**サ終**
 - Mac Mini だけコストパフォーマンスが異常
   - 当時 10 万円を切っていた
 
-![bg left:40%](assets/photo/photo_macmini.JPG)
+![bg left:40%](assets/photo/photo_macmini.jpg)
 
 ### Mac Mini 1 台目
 
@@ -387,7 +389,7 @@ Mac 環境必須のアプリケーションなどを実行
   CHA_FAN: 3x Thermaltake TOUGHFAN 12 Pro
   ```
 
-  ![bg right:40%](assets/photo/photo_mainmachine.JPG)
+  ![bg right:40%](assets/photo/photo_mainmachine.jpg)
 
 ### レンダリングマシン
 
@@ -408,8 +410,8 @@ Mac 環境必須のアプリケーションなどを実行
   WATER COOLING: EKWB
   ```
 
-  ![bg vertical left:40%](assets/photo/photo_rendermachine1.JPG)
-  ![bg vertical left:40%](assets/photo/photo_rendermachine2.JPG)
+  ![bg vertical left:40%](assets/photo/photo_rendermachine1.jpg)
+  ![bg vertical left:40%](assets/photo/photo_rendermachine2.jpg)
 
 ## ワークフロー
 
@@ -433,7 +435,7 @@ Mac 環境必須のアプリケーションなどを実行
 - After Effectsの新しいOCIO機能も活用している。
 - ワークフローの明文化を進めている。
 
-![bg right:40%](assets/photo/photo_overlay.JPG)
+![bg right:40%](assets/photo/photo_overlay.jpg)
 
 ### After Effects でタイムコードのオーバーレイの作成
 
@@ -442,7 +444,7 @@ Mac 環境必須のアプリケーションなどを実行
 - プレビズやオフラインデータを起点として制作する場合、特に有用。
 - 16:9の上下に余白を作る形で挿入している。
 
-![bg right:40%](assets/photo/photo_overlay.JPG)
+![bg right:40%](assets/photo/photo_overlay.jpg)
 
 ### <!-- 図拡大 -->
 
@@ -517,7 +519,7 @@ RAM: 16GB DDR4 ECC UDIMM
 6x 8TB WD Red
 ```
 
-![bg left:30%](assets/photo/photo_offsite.png)
+![bg left:30%](assets/photo/photo_offsite.jpg)
 
 ### 2. 終了直後のプロジェクト (ホットアーカイブ)
 
@@ -549,7 +551,7 @@ LTO-8 テープ(長期プロジェクト)|-|-
 - 2024 年始め、LTO-8 ドライブを導入。Thunderbolt 接続で、Mac Mini サーバーで運用している。
 - [YoYotta](https://yoyotta.com/) を使用してアーカイブ・リトリーブ操作を行い、出力された CSV データを SQL データベースに登録、Web サイトからユーザーごとに参照できるようにしている。
 
-![bg right:30%](assets/photo/photo_tapes.JPG)
+![bg right:30%](assets/photo/photo_tapes.jpg)
 
 ### LTO の使用方法・メンテナンスなど
 
@@ -559,7 +561,7 @@ LTO-8 テープ(長期プロジェクト)|-|-
 - クリーニングカートリッジというのがあり、ドライブでクリーニングのサインが点灯した段階で使用する。
 - 災害などへの対策として、同一のコピーを 2 つ作成、別々の場所で保管する。
 
-![bg right:40%](assets/photo/photo_ltousage.JPG)
+![bg right:40%](assets/photo/photo_ltousage.jpg)
 
 ### LTO のコストパフォーマンス
 
