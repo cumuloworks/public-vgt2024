@@ -105,7 +105,7 @@ paginate: false
 
 **Freelance Director**
 Motion Designer, CG Generalist
-最近はちょっと Developer
+最近はちょっと Developer ?
 
 - 2014 年 映像制作を始める
 - 2017 年 大学に通いながらフリーランスに
@@ -155,8 +155,6 @@ Motion Designer, CG Generalist
 - 方法 1: Twitter の DM にて!
 - 方法 2: マシュマロにて → 匿名が可能!
 
-  [![マシュマロ](https://img.shields.io/badge/マシュマロ-質問募集中-ff69b4)](https://marshmallow-qa.com/cumuloworks)
-
 ![w:360 h:360 bg right:40%](assets/qr/qr_marshmallow.png)
 
 ## 機材
@@ -166,10 +164,10 @@ Motion Designer, CG Generalist
 2023 年に導入したラック
 
 - 奥行きを調整できるタイプで、高さは 8U
-- ⭕️ デスク周りに機材が散らばらず、コンパクトに収まる
-- ⭕ 見た目がクール ❌️ あらゆる付属品の価格が高い
+- デスク周りに機材が散らばらず、コンパクトに収まる
+- 見た目がクールだが、あらゆる付属品の価格が高い
 
-  ![bg right brightness:50%](assets/photo/photo_rack2.jpg)
+  ![bg brightness:50%](assets/photo/photo_rack2.jpg)
 
 ### ラック構成
 
@@ -183,7 +181,7 @@ Motion Designer, CG Generalist
 
 **NTT 光クロス(10Gbps)** を引き込んでおり、スイッチを介して分配される
 
-- ⭕️ NTT のレンタルルーター([XG-100NE](https://web116.jp/shop/hikari_r/xg_100ne/xg_100ne_00.html))よりも高い安定性
+- NTT のレンタルルーター([XG-100NE](https://web116.jp/shop/hikari_r/xg_100ne/xg_100ne_00.html))よりも高い安定性
 - **高スループットの回線**を契約することにより、データのやり取りでストレスが減った
 - インターネットに直に接する機材 → セキュリティ面で重要な役割
 - Mac アドレスを基に、主要な LAN 内デバイスの IP アドレスをルーター側で固定
@@ -210,7 +208,7 @@ Motion Designer, CG Generalist
 - NAS と USB 接続することで、電力喪失時に安全にシャットダウンされる
 - 商用電源が不安定になっても、安全に電力供給できる（見落とされがちなメリット）
   - 電力逼迫で、電圧低下や周波数不安定化が起こることは今後もありそう
-- ⭕️ 前面の液晶ディスプレイで、電力消費量やバッテリー残量などが確認できて便利
+- 前面の液晶ディスプレイで、電力消費量やバッテリー残量などが確認できて便利
 
 ![bg brightness:50%](assets/photo/photo_ups.jpg)
 
@@ -224,7 +222,7 @@ Motion Designer, CG Generalist
   - コスト面 + ケーブルの取り回しに気を使う
   - 結局 RJ45 に変換する必要がある
 
-![bg right:45%](assets/diagram/diagram_network.png)
+![bg right:42.5%](assets/diagram/diagram_network.png)
 
 ### メインストレージサーバー ([Synology RS3621xs+](https://www.synology.com/ja-jp/products/RS3621xs+))
 
@@ -251,12 +249,6 @@ SHR-2 (RAID 6) ... 2 ディスク障害耐性
 Google Drive の容量無制限が**サ終**
 ↓
 「保存したかったら年間 400 万円払ってね」
-↓
-行き場を失った 100TB のデータ
-↓
-**オンプレ化を決意**
-↓
-以後、ストレージ以外もオンプレ化の流れ
 
 ```plaintext
 Google Workspace 追加ストレージ アドオン サブスクリプションの
@@ -264,13 +256,20 @@ Google Workspace 追加ストレージ アドオン サブスクリプション�
 購入すると、ストレージ プールに 10 TB が追加されます
 ```
 
+↓
+行き場を失った 100TB のデータ
+↓
+**オンプレ化を決意**
+↓
+以後、**ストレージ以外もオンプレ化**の流れ
+
 ![bg right:40% 103%](assets/screenshot/screenshot_disaster.png)
 
 ### なぜオンプレ化を推し進めるのか (メリット vs リスク)
 
 <!-- オンプレという言葉の意味について触れた方が良い -->
 
-#### ⭕️ メリット
+#### メリット
 
 - **常にデータが手元にある安心感**
   - TB 単位のデータは、クラウドにアップロード・ダウンロードするだけで膨大な時間がかかる
@@ -278,7 +277,7 @@ Google Workspace 追加ストレージ アドオン サブスクリプション�
   - 急なサービス内容の変更や価格改定による影響を受けない
 - たのしい・クール
 
-#### ❌ デメリット（リスク = 対策が必要）
+#### デメリット（リスク = 対策が必要）
 
 - ランサムウェア・物理的な盗難など、セキュリティ面での不安
 - 災害などによるデータ損失リスク
