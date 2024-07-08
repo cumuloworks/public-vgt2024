@@ -197,7 +197,6 @@ Motion Designer, CG Generalist
 - 排熱も良好で、本格的に 10GbE 化を始めたい方にはおすすめ
 - ここから各作業用マシン・サーバーなどへネットワークが分配される
 - 8 ポートで足りず、買い替えを検討中
-s
 
 ![w:720px](assets/web/web_xs508m.jpg)
 
@@ -306,7 +305,7 @@ Google Workspace 追加ストレージ アドオン サブスクリプション�
 - 途中からプロジェクトファイルが壊れた
 - 前のレンダーデータが必要になった
 
-💡Intellivergioningによって、最低限の容量で差分バックアップ
+💡Intelliversioningによって、最低限の容量で差分バックアップ
 
 ![bg right:40% 80%](assets/screenshot/screenshot_versionexplorer.png)
 
