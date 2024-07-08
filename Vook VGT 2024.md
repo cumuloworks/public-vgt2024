@@ -348,9 +348,9 @@ Google Workspace 追加ストレージ アドオン サブスクリプション�
 
 <!-- PhotoPrismを例に、Dockerの活用について説明 -->
 
-### Mac Mini サーバー ([M2 Mac Mini](https://www.apple.com/jp/mac-mini/))
+### Mac Mini サーバー ([Mac Mini (M2)](https://www.apple.com/jp/mac-mini/))
 
-10GbE オプションの M2 Mac Mini を 2 台導入
+10GbE オプションの Mac Mini (M2) を 2 台導入
 
 ラックマウント化し、ディスプレイなしで運用(Parsec でリモートアクセス)
 
