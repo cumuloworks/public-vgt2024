@@ -269,6 +269,8 @@ Google Drive の容量無制限が**サ終**
 
 ### なぜオンプレ化を推し進めるのか (メリット vs リスク)
 
+<!-- オンプレという言葉の意味について触れた方が良い -->
+
 #### ⭕️ メリット
 
 - **常にデータが手元にある安心感**
@@ -280,11 +282,15 @@ Google Drive の容量無制限が**サ終**
 
 #### ❌ デメリット（リスク = 対策が必要）
 
-- ランサムウェアなどセキュリティ面での不安
+- ランサムウェア・物理的な盗難など、セキュリティ面での不安
 - 災害などによるデータ損失リスク
 - ストレージなどの機材の購入・管理コストがかかる
 
+💡 Synologyのようなパッケージで、デメリットを最小化
+
 ### 1. ストレージサーバーとして
+
+<!-- ここからは使用例の解説 -->
 
 プロジェクトファイル・アセットなどを集約。
 
@@ -301,11 +307,13 @@ Google Drive の容量無制限が**サ終**
 - 途中からプロジェクトファイルが壊れた
 - 前のレンダーデータが必要になった
 
+💡Intellivergioningによって、最低限の容量で差分バックアップ
+
 ![bg right:40% 80%](assets/screenshot/screenshot_versionexplorer.png)
 
 ### 3. 社外とのファイル同期
 
-[Synology Drive](https://www.synology.com/ja-jp/dsm/feature/drive) を使って、NAS 上のファイルを社外の共同作業者に同期してもらう
+[Synology Drive](https://www.synology.com/ja-jp/dsm/feature/drive) を使って、NAS 上のフォルダ・ファイルを社外の共同作業者に同期してもらう
 
 - オンプレミスの Dropbox のような感じ
 - ユーザーとファイルの組み合わせで、細かく権限を設定可能。
@@ -328,17 +336,19 @@ Google Drive の容量無制限が**サ終**
 
   ![h:192px](assets/screenshot/screenshot_linkshare.png)
 
-### 5. その他機能
+### 5. その他機能(仮想化系)
 
 1. Docker コンテナの運用 ([Container Manager](https://www.synology.com/dsm/feature/container-manager))
 2. Windows や Linux のバーチャルマシンの運用 ([Virtual Machine Manager](https://www.synology.com/dsm/feature/virtual_machine_manager))
 
-- 使用例2
+#### 応用例
 
 - Windows で時間がかかる処理を、NAS のバーチャルマシンで行う。
 - 社内ツールの Web サーバー・SQL サーバーとしての利用。
 - [PhotoPrism](https://www.photoprism.app/)のサーバーとして運用。
   - ミラーレスカメラで撮影 → FTP で 直接 NAS にアップロード → PhotoPrism で管理
+
+<!-- PhotoPrismを例に、Dockerの活用について説明 -->
 
 ### Mac Mini サーバー ([M2 Mac Mini](https://www.apple.com/jp/mac-mini/))
 
@@ -474,6 +484,10 @@ Mac 環境必須のアプリケーションなどを実行
 
 ![shotlist](assets/screenshot/screenshot_shotlist.png)
 
+### レビューシステム
+
+
+
 ### CG レンダリング
 
 #### GPU (Octane Render)
@@ -589,6 +603,8 @@ LTO-8 テープ(長期プロジェクト)|-|-
   `150TB + 毎年 40TB 増加 + 10 年間保存`
 
 ![bg right:50% 90%](python/plot.png)
+
+### 今からできる！バックアップストラテジー
 
 ## 今後の展望 (最近興味があること)
 
