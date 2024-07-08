@@ -51,7 +51,7 @@ style: |
   blockquote {
     color: #ffffff;
     margin-top: 30px;
-    font-size: 18px;
+    font-size: 12px;
   }
   a {
     color: #ffffff;
@@ -93,9 +93,11 @@ paginate: false
 
 # 快適な制作環境の作り方
 
+<center style="font-size:32px ;font-weight: bold;">機材・ワークフローを整えて、強固な制作基盤をつくる </center>
+
 ![bg brightness:50%](assets/photo/photo_rack1.jpg)
 
-<img src="assets/logo/logo_cumuloworks.png" height="96" style="transform: translateY(0%);" alt="Cumuloworks">
+<img src="assets/logo/logo_cumuloworks.png" height="96" style="transform: translateY(150%);" alt="Cumuloworks">
 
 ## 自己紹介
 
@@ -117,14 +119,13 @@ Motion Designer, CG Generalist
 
 ![w:360 h:360 bg right:40%](assets/qr/qr_x.png)
 
-### 合同会社キュムロワークス
+### [合同会社キュムロワークス](https://cumulo.works/company/)
 
 **Cumuloworks, Inc.**
 
 - 2021 年 9 月設立 (もうすぐ 4 期目)
-- 広告・エンタメの CG 映像制作がメインf
+- 広告・エンタメ双方のCG 映像制作がメイン
 - 6 月からは[@shgumo](https://twitter.com/shgumo)との 2 名体制
-- [SHOWREEL 2024](https://cumulo.works/)
 
 ![bg right:40%](assets/photo/photo_office.jpg)
 
@@ -149,6 +150,17 @@ Motion Designer, CG Generalist
 
 `※順番は少し前後します`
 
+## 質問の方法
+
+**質問は随時受け付けています！**
+
+- 方法1: TwitterのDMにて!
+- 方法2: マシュマロにて → 匿名が可能！
+
+  [![マシュマロ](https://img.shields.io/badge/マシュマロ-質問募集中-ff69b4)](https://marshmallow-qa.com/cumuloworks)
+
+![w:360 h:360 bg right:40%](qr_marshmallow.png)
+
 ## 機材
 
 ### ラック ([StarTech 4POSTRACK8U](https://www.startech.com/ja-jp/server-management/4postrack8u))
@@ -159,7 +171,7 @@ Motion Designer, CG Generalist
 - ⭕️ デスク周りに機材が散らばらず、コンパクトに収まる。
 - ⭕ 見た目がクール ❌️ あらゆる付属品の価格が高い
 
-  ![bg brightness:50%](assets/photo/photo_rack2.jpg)
+  ![bg right brightness:50%](assets/photo/photo_rack2.jpg)
 
 ### ラック構成
 
@@ -207,12 +219,13 @@ s
 
 ### ネットワーク構成
 
-#### ポイント
-
-- すべて 10GbE 接続
+- すべて 10GbE (Cat.6A) 接続
 - 10GbE スイッチを介して相互接続
 - NAS は 20GbE 帯域を確保
   - 理論上、Internet <-> NAS と、各マシン <-> NAS それぞれで 10Gbps の帯域を確保。
+- RJ45にしている理由
+  - コスト面 + ケーブルの取り回しに気を使う。
+  - 結局RJ45に変換する必要がある。
 
 ![bg right:45%](assets/diagram/diagram_network.png)
 
@@ -232,6 +245,8 @@ RAM: 32GB DDR4 ECC RDIMM (2x 16GB)
 SHR-2 (RAID 6) ... 2 ディスク障害耐性
 ```
 
+💡 データセンター用の HDD を採用
+
 ![bg right:40% 125%](assets/photo/photo_mainserver.jpg)
 
 ### 0. 導入のきっかけ
@@ -246,9 +261,13 @@ Google Drive の容量無制限が**サ終**
 ↓
 以後、ストレージ以外もオンプレ化の流れ
 
+> Google Workspace 追加ストレージ アドオン サブスクリプションの
+ご利用料金は月額 300 米ドルです。
+購入すると、ストレージ プールに 10 TB が追加されます。
+
 ![bg right:40% 103%](assets/screenshot/screenshot_disaster.png)
 
-### なぜオンプレ化を推し進めるのか
+### なぜオンプレ化を推し進めるのか (メリット vs リスク)
 
 #### ⭕️ メリット
 
@@ -259,7 +278,7 @@ Google Drive の容量無制限が**サ終**
   - 月額料金がかからない
 - たのしい・クール
 
-#### ❌ デメリット（対策が必要）
+#### ❌ デメリット（リスク = 対策が必要）
 
 - ランサムウェアなどセキュリティ面での不安
 - 災害などによるデータ損失リスク
