@@ -2,6 +2,6 @@
     "recommendations": [
         "marp-team.marp-vscode",
         "streetsidesoftware.code-spell-checker",
-        "davidanson.vscode-markdownlint"
+        "esbenp.prettier-vscode"
     ]
 }

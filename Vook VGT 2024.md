@@ -105,7 +105,7 @@ paginate: false
 
 **Freelance Director**
 Motion Designer, CG Generalist
-最近ちょっと Developer
+最近はちょっと Developer
 
 - 2014 年 映像制作を始める
 - 2017 年 大学に通いながらフリーランスに
@@ -122,7 +122,7 @@ Motion Designer, CG Generalist
 **Cumuloworks, Inc.**
 
 - 2021 年 9 月設立 (もうすぐ 4 期目)
-- 広告・エンタメ双方のCG 映像制作がメイン
+- 広告・エンタメ双方の CG 映像制作がメイン
 - 6 月からは[@shgumo](https://twitter.com/shgumo)との 2 名体制
 
 ![bg right:40%](assets/photo/photo_office.jpg)
@@ -138,7 +138,7 @@ Motion Designer, CG Generalist
 ## 本日の内容
 
 1. 機材紹介
-  Cumuloworks,Inc. で導入している機材の紹介
+   Cumuloworks,Inc. で導入している機材の紹介
 
 2. ワークフロー紹介
    機材をどのように制作に活かしているか
@@ -152,8 +152,8 @@ Motion Designer, CG Generalist
 
 **質問は随時受け付けています!**
 
-- 方法1: TwitterのDMにて!
-- 方法2: マシュマロにて → 匿名が可能!
+- 方法 1: Twitter の DM にて!
+- 方法 2: マシュマロにて → 匿名が可能!
 
   [![マシュマロ](https://img.shields.io/badge/マシュマロ-質問募集中-ff69b4)](https://marshmallow-qa.com/cumuloworks)
 
@@ -220,9 +220,9 @@ Motion Designer, CG Generalist
 - 10GbE スイッチを介して相互接続
 - NAS は 20GbE 帯域を確保
   - 理論上、Internet <-> NAS と、各マシン <-> NAS それぞれで 10Gbps の帯域を確保
-- RJ45にしている理由
+- RJ45 にしている理由
   - コスト面 + ケーブルの取り回しに気を使う
-  - 結局RJ45に変換する必要がある
+  - 結局 RJ45 に変換する必要がある
 
 ![bg right:45%](assets/diagram/diagram_network.png)
 
@@ -284,7 +284,7 @@ Google Workspace 追加ストレージ アドオン サブスクリプション�
 - 災害などによるデータ損失リスク
 - ストレージなどの機材の購入・管理コストがかかる
 
-💡 Synologyのようなパッケージで、デメリットを最小化
+💡 Synology のようなパッケージで、デメリットを最小化
 
 ### 1. ストレージサーバーとして
 
@@ -305,7 +305,7 @@ Google Workspace 追加ストレージ アドオン サブスクリプション�
 - 途中からプロジェクトファイルが壊れた
 - 前のレンダーデータが必要になった
 
-💡Intelliversioningによって、最低限の容量で差分バックアップ
+💡Intelliversioning によって、最低限の容量で差分バックアップ
 
 ![bg right:40% 80%](assets/screenshot/screenshot_versionexplorer.png)
 
@@ -399,7 +399,7 @@ Mac 環境必須のアプリケーションなどを実行
 ### メインマシン
 
 - 2024 年始めに導入した Threadripper マシン
-  - AEでの編集作業がストレスなく行えるように、メモリを 384GB に
+  - AE での編集作業がストレスなく行えるように、メモリを 384GB に
 - 現状 VRAM が 24GB で足りないので、将来的に換装予定
 
   ```plaintext
@@ -443,21 +443,21 @@ Mac 環境必須のアプリケーションなどを実行
 ### 進行管理・コミュニケーションツール
 
 - 社内では基本的に [Notion](https://www.notion.so/), [Discord](https://discord.com/) に集約
-- Discordは、チャンネルごとに細かい権限設定が出来て、複数プロジェクトが同時に動くような状況でも使いやすい
+- Discord は、チャンネルごとに細かい権限設定が出来て、複数プロジェクトが同時に動くような状況でも使いやすい
 - その他、プロジェクトに合わせて柔軟に対応
 
 ### ファイルの命名規則・整理のルールなど
 
 - すべてのプロジェクトでファイルの命名規則を統一
-- 最近、ルールを明文化した[Githubで公開中](https://github.com/cumuloworks/public-docs/blob/main/cumuloworks-naming-standard.md)
+- 最近、ルールを明文化した[Github で公開中](https://github.com/cumuloworks/public-docs/blob/main/cumuloworks-naming-standard.md)
 
 ![bg right:45%](assets/screenshot/screenshot_namingrules.png)
 
 ### カラーマネジメント
 
 - ハードウェアキャリブレーション可能なモニターを導入
-- 最近では、ACESへの統一を進めている
-- After Effectsの新しいOCIO機能も活用している
+- 最近では、ACES への統一を進めている
+- After Effects の新しい OCIO 機能も活用している
 - ワークフローの明文化を進めている
 
 ![bg right:40%](assets/photo/photo_overlay.jpg)
@@ -467,7 +467,7 @@ Mac 環境必須のアプリケーションなどを実行
 - 各ショット・フレームを正確に把握するために独自のオーバーレイを導入
 - 日時・マシン名・タイムコードなどがすぐ把握でき、CG ソフトとのやり取りや、エラーフレームの除去などで活用
 - プレビズやオフラインデータを起点として制作する場合、特に有用
-- 16:9の上下に余白を作る形で挿入している
+- 16:9 の上下に余白を作る形で挿入している
 
 ![bg right:40%](assets/photo/photo_overlay.jpg)
 
@@ -484,10 +484,10 @@ Mac 環境必須のアプリケーションなどを実行
 
 ### レビューシステム
 
-Dockerで動作する [Kollaborate](https://www.kollaborate.tv/) を導入
+Docker で動作する [Kollaborate](https://www.kollaborate.tv/) を導入
 
 - オンプレミスで動く frame.io みたいな
-- レビューのコメントをDaVinci ResolveとEDLで連携
+- レビューのコメントを DaVinci Resolve と EDL で連携
 - クライアントとの共有でも有用
 
 ### <!-- レビューシステム 写真 -->
@@ -500,7 +500,7 @@ Dockerで動作する [Kollaborate](https://www.kollaborate.tv/) を導入
 
 - ほぼ全てのプロジェクトで Octane Renderer を使用
 - 基本的には [RNDR](https://rndr.otoy.com/) を使用したクラウドレンダリング
-- プレビューや、短時間のレンダリングはRender Nodeを使用
+- プレビューや、短時間のレンダリングは Render Node を使用
 - それぞれのマシンの GPU をネットワーク経由で利用可能簡単にスケールできる
 
 #### CPU (Cinema 4D Standard など)
@@ -593,7 +593,7 @@ RAM: 16GB DDR4 ECC UDIMM
 
 - [YoYotta](https://yoyotta.com/) を使用してアーカイブ・リトリーブ操作を行う
 - YoYotta は、データ検索が若干遅い
-- データコピーのログをSQLに登録して、ブラウズできるサービスを制作
+- データコピーのログを SQL に登録して、ブラウズできるサービスを制作
 - Next.js たのしい
 
 ### LTO のコストパフォーマンス
@@ -609,18 +609,19 @@ RAM: 16GB DDR4 ECC UDIMM
 ### 今からできる!バックアップストラテジー
 
 - 重要なデータはクラウドストレージで同期を取る
+
   - ローカルのドライブの障害に備える
 
-- HDDは、2つ以上のコピーを作る
-  - 可能であれば、1つはオフサイトに保管する(自宅 + 職場など)
+- HDD は、2 つ以上のコピーを作る
+  - 可能であれば、1 つはオフサイトに保管する(自宅 + 職場など)
 
 ### バックアップ体制のまとめ
 
-進行中|終了直後|終了後
----|---|---
-メインサーバー|メインサーバー|LTO-8 テープ
-オフサイトサーバー|LTO-8 テープ|-
-LTO-8 テープ(長期プロジェクト)|-|-
+| 進行中                         | 終了直後       | 終了後       |
+| ------------------------------ | -------------- | ------------ |
+| メインサーバー                 | メインサーバー | LTO-8 テープ |
+| オフサイトサーバー             | LTO-8 テープ   | -            |
+| LTO-8 テープ(長期プロジェクト) | -              | -            |
 
 ## 今後の展望 (最近興味があること)
 
@@ -641,7 +642,7 @@ LTO-8 テープ(長期プロジェクト)|-|-
 ### git でのバージョン管理
 
 - 複数人で作業するとき、データをバージョン管理できないか（特に AEP など）?
-- 複数のAEP、複数のコンポジションなどを複数人で作業した後にマージする方法はないか?
+- 複数の AEP、複数のコンポジションなどを複数人で作業した後にマージする方法はないか?
 
 ### 興味がある方、是非ご連絡ください
 
@@ -657,6 +658,6 @@ Thank you very much for listening!
 
 ![w:360 h:360 bg right:40%](assets/qr/qr_x.png)
 
-本講演の資料は [Github で公開しています](https://github.com/cumuloworks/public-vgt2024)
+本講演の資料は [Github で公開しています](https://cumuloworks.github.io/public-vgt2024/Vook%20VGT%202024.html)
 
-[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/cumuloworks)
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/cumuloworks) [![Twitter](https://img.shields.io/badge/twitter-%231DA1F2.svg?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/cumuloworks) [![Instagram](https://img.shields.io/badge/instagram-%23E4405F.svg?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/cumuloworks/) [![マシュマロ](https://img.shields.io/badge/marshmallow-%23FFA500.svg?style=for-the-badge&logo=marshmallow&logoColor=white)](https://marshmallow-qa.com/cumuloworks)
