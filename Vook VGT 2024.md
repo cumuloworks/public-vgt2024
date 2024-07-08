@@ -457,7 +457,13 @@ Mac 環境必須のアプリケーションなどを実行
 - ハードウェアキャリブレーション可能なモニターを導入
 - 最近では、ACES への統一を進めている
 - After Effects の新しい OCIO 機能も活用している
-- ワークフローの明文化を進めている
+
+#### 各ソフトウェアのカラースペース
+
+- Octane Render: ACEScg
+- After Effects: ACEScgでコンポジット、ACEScctで書き出し
+- DaVinci Resolve: ACEScct
+- 納品: 基本的には Rec.709 で、必要に応じて他のカラースペースに変換
 
 ![bg right:40%](assets/photo/photo_overlay.jpg)
 
