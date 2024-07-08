@@ -159,7 +159,7 @@ Motion Designer, CG Generalist
 
   [![マシュマロ](https://img.shields.io/badge/マシュマロ-質問募集中-ff69b4)](https://marshmallow-qa.com/cumuloworks)
 
-![w:360 h:360 bg right:40%](qr_marshmallow.png)
+![w:360 h:360 bg right:40%](assets/qr/qr_marshmallow.png)
 
 ## 機材
 
