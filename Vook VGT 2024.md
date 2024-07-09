@@ -636,7 +636,7 @@ RAM: 16GB DDR4 ECC UDIMM
 - 開発中のアプリケーション[（Seequer）](https://seequer.app/)
 - 連番ファイルの一覧表示、プレビュー、破損ファイル検出など
 
-  ![h:420px](assets/screenshot/screenshot_seequer.png)
+  <!-- ![h:420px](assets/screenshot/screenshot_seequer.png) -->
 
 #### カットごとにリアルタイムで進捗状況をトラッキングすること
 
