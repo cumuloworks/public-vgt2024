@@ -665,3 +665,15 @@ Thank you very much for listening!
 本講演の資料は [Github で公開しています](https://cumuloworks.github.io/public-vgt2024/Vook%20VGT%202024.html)
 
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/cumuloworks) [![Twitter](https://img.shields.io/badge/twitter-%231DA1F2.svg?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/cumuloworks) [![Instagram](https://img.shields.io/badge/instagram-%23E4405F.svg?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/cumuloworks/) [![マシュマロ](https://img.shields.io/badge/marshmallow-%23FFA500.svg?style=for-the-badge&logo=marshmallow&logoColor=white)](https://marshmallow-qa.com/cumuloworks)
+
+## Q&A
+
+### 質問です。クラウドに関して、Google drive からオンプレではなく Flame.io に移行することは検討されなかったのでしょうか？また、それはなぜですか？
+
+📌 データが映像関連のみでないことと、今後 200TB 以上にデータが膨れ上がることを想定すると、frame.io のようなクラウドサービスを使い続けることは現実出来ではないと判断しました
+
+### NAS のバーチャルマシンとして使う具体例お聞きしたいです！メインマシンの方がパワーがあるのでは？と疑問でした。ファイル管理などで Windows では不向きな面があるのでしょうか？
+
+📌 負荷が高い作業というよりは、**負荷が低いが時間がかかる作業**を回すことが多いです。それらをメインマシンで行うと、再起動などによっていちいち中断されてしまうからです
+
+e.g. 遅いサーバーからのデータのダウンロードや、時間がかかるファイルの変換処理など
