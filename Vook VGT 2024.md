@@ -146,8 +146,6 @@ Motion Designer, CG Generalist
 3. 今後の展望
    最近興味があること、今後の拡張の計画（妄想）
 
-`※順番は少し前後します`
-
 ## 質問の方法
 
 **質問は随時受け付けています!**
@@ -179,12 +177,13 @@ Motion Designer, CG Generalist
 
 ### メインルーター ([YAMAHA RTX1300](https://network.yamaha.com/products/routers/rtx1300/))
 
-**NTT 光クロス(10Gbps)** を引き込んでおり、スイッチを介して分配される
+**NTT 光クロス(10Gbps)** を引き込んでいる
 
 - NTT のレンタルルーター([XG-100NE](https://web116.jp/shop/hikari_r/xg_100ne/xg_100ne_00.html))よりも高い安定性
 - **高スループットの回線**を契約することにより、データのやり取りでストレスが減った
 - インターネットに直に接する機材 → セキュリティ面で重要な役割
-- Mac アドレスを基に、主要な LAN 内デバイスの IP アドレスをルーター側で固定
+
+💡 Mac アドレスを基に、主要な LAN 内デバイスの IP アドレスをルーター側で固定
 
 ![bg right:30%](assets/photo/photo_router.jpg)
 
@@ -205,10 +204,10 @@ Motion Designer, CG Generalist
 ラック全体の電源をバックアップする、最大 680W 対応の UPS
 
 - 現環境の高負荷時で、10 分程度は電力を維持可能
+- 前面の液晶ディスプレイで、電力消費量やバッテリー残量などが確認できて便利
 - NAS と USB 接続することで、電力喪失時に安全にシャットダウンされる
 - 商用電源が不安定になっても、安全に電力供給できる（見落とされがちなメリット）
   - 電力逼迫で、電圧低下や周波数不安定化が起こることは今後もありそう
-- 前面の液晶ディスプレイで、電力消費量やバッテリー残量などが確認できて便利
 
 ![bg brightness:50%](assets/photo/photo_ups.jpg)
 
@@ -304,7 +303,7 @@ Google Workspace 追加ストレージ アドオン サブスクリプション�
 - 途中からプロジェクトファイルが壊れた
 - 前のレンダーデータが必要になった
 
-💡Intelliversioning によって、最低限の容量で差分バックアップ
+💡Intelliversioning 機能によって、最低限の容量で差分バックアップ
 
 ![bg right:40% 80%](assets/screenshot/screenshot_versionexplorer.png)
 
@@ -461,7 +460,7 @@ Mac 環境必須のアプリケーションなどを実行
 #### 各ソフトウェアのカラースペース
 
 - Octane Render: ACEScg
-- After Effects: ACEScgでコンポジット、ACEScctで書き出し
+- After Effects: ACEScg でコンポジット、ACEScct で書き出し
 - DaVinci Resolve: ACEScct
 - 納品: 基本的には Rec.709 で、必要に応じて他のカラースペースに変換
 
