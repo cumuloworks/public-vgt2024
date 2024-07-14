@@ -151,7 +151,7 @@ Motion Designer, CG Generalist
 **質問は随時受け付けています!**
 
 - 方法 1: Twitter の DM にて!
-- 方法 2: マシュマロにて → 匿名が可能!
+- 方法 2: [マシュマロにて](https://marshmallow-qa.com/cumuloworks) → 匿名が可能!
 
 ![w:360 h:360 bg right:40%](assets/qr/qr_marshmallow.png)
 
@@ -177,7 +177,7 @@ Motion Designer, CG Generalist
 
 ### メインルーター ([YAMAHA RTX1300](https://network.yamaha.com/products/routers/rtx1300/))
 
-**NTT 光クロス(10Gbps)** を引き込んでいる
+[**NTT 光クロス(10Gbps)**](https://flets.com/cross/)を契約しており、そのままルーターに接続を引き込んでいる
 
 - NTT のレンタルルーター([XG-100NE](https://web116.jp/shop/hikari_r/xg_100ne/xg_100ne_00.html))よりも高い安定性
 - **高スループットの回線**を契約することにより、データのやり取りでストレスが減った
@@ -610,7 +610,7 @@ RAM: 16GB DDR4 ECC UDIMM
 
 ![bg right:50% 90%](python/plot.png)
 
-### 今からできる!バックアップストラテジー
+### 今からできる! バックアップストラテジー
 
 - 重要なデータはクラウドストレージで同期を取る
 
